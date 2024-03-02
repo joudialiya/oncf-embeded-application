@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:h2:mem:test</property>
+        <property name="connection.driver_class">org.h2.Driver</property>
+        <property name="connection.autocommit">true</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <mapping class="org.example.Models.Computer"/>
+        <mapping class="org.example.Models.Rame"/>
+        <mapping class="org.example.Models.BreakdownInfos"/>
+        <mapping class="org.example.Models.BreakdownEventsAssociation"/>
+        <mapping class="org.example.Models.RameComputerAssociation"/>
+    </session-factory>
+</hibernate-configuration>
