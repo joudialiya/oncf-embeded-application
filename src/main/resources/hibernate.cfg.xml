@@ -10,10 +10,10 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
 
-        <mapping class="org.example.Models.Computer"/>
-        <mapping class="org.example.Models.Rame"/>
-        <mapping class="org.example.Models.BreakdownInfos"/>
-        <mapping class="org.example.Models.BreakdownEventsAssociation"/>
-        <mapping class="org.example.Models.RameComputerAssociation"/>
+        <mapping class="org.example.models.Computer"/>
+        <mapping class="org.example.models.Rame"/>
+        <mapping class="org.example.models.BreakdownInfos"/>
+        <mapping class="org.example.models.BreakdownEventsAssociation"/>
+        <mapping class="org.example.models.RameComputerAssociation"/>
     </session-factory>
 </hibernate-configuration>

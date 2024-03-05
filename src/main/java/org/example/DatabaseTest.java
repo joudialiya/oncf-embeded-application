@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.Models.Computer;
-import org.example.Models.Rame;
-import org.example.Models.RameComputerAssociation;
+import org.example.models.Computer;
+import org.example.models.Rame;
+import org.example.models.RameComputerAssociation;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

@@ -1,10 +1,8 @@
-package org.example.Models;
+package org.example.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
 @Data
 @Entity
 public class RameComputerAssociation {
