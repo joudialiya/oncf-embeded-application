@@ -4,7 +4,6 @@ import com.fazecast.jSerialComm.SerialPort;
 
 import java.io.*;
 import java.util.Arrays;
-import java.util.Collection;
 
 /**
  * A Class that encapsulates a basic implementation of a Xmodem receiver,
