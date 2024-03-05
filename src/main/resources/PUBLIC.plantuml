@@ -1,0 +1,38 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class BREAKDOWNEVENTSASSOCIATION {
+   IDBREAKDOWN: integer
+   IDRAME: integer
+   TENSION: integer
+   VELOCITY: real
+   DATE: timestamp
+   ID: integer
+}
+class BREAKDOWNINFOS {
+   CODE: character varying(255)
+   DESIGNATION: character varying(255)
+   ID: integer
+}
+class COMPUTER {
+   IPADDRESS: character varying(255)
+   ID: integer
+}
+class RAME {
+   NAME: character varying(255)
+   ID: integer
+}
+class RAMECOMPUTERASSOCIATION {
+   IDCOMPUTER: integer
+   IDRAME: integer
+   ID: integer
+}
+
+BREAKDOWNEVENTSASSOCIATION  -[#595959,plain]-^  BREAKDOWNINFOS             : "IDBREAKDOWN:ID"
+BREAKDOWNEVENTSASSOCIATION  -[#595959,plain]-^  RAME                       : "IDRAME:ID"
+RAMECOMPUTERASSOCIATION     -[#595959,plain]-^  COMPUTER                   : "IDCOMPUTER:ID"
+RAMECOMPUTERASSOCIATION     -[#595959,plain]-^  RAME                       : "IDRAME:ID"
+@enduml
