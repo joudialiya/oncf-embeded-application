@@ -1,5 +1,7 @@
 import com.fazecast.jSerialComm.SerialPort;
 import net.digger.protocol.xymodem.XYModem;
+import org.example.tools.DiagnosticFileDecoder;
+import org.example.tools.DiagnosticRecord;
 import org.example.tools.MyIO;
 import org.example.tools.XmodemReceiver;
 import org.junit.Rule;
@@ -26,17 +28,15 @@ public class TestClass {
 
     }
     @Test
-    public void testXmodemReceiver() throws IOException, InterruptedException {
+    public void testXmodemReceiverCNCVersion() throws IOException, InterruptedException {
         var com4 = SerialPort.getCommPort("COM4");
         com4.openPort();
         XmodemReceiver.receive(com4, "out.txt");
     }
     @Test
-    public void testDownload()
+    public void testDecoding()
     {
-        var com4 = SerialPort.getCommPort("COM4");
-        com4.openPort();
-        new XYModem(new MyIO(com4)).download();
+        DiagnosticFileDecoder.decode("output", "out.csv");
     }
 }
 

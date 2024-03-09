@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d471c0f3-247c-45f2-88c6-eb99bc8f3db5" name="Changes" comment="set up the test properly">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/MyIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
+    <list default="true" id="d471c0f3-247c-45f2-88c6-eb99bc8f3db5" name="Changes" comment="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that.">
+      <change afterPath="$PROJECT_DIR$/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SerialConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SerialConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tools/XmodemReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/XmodemReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/RameComputerAssociation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/RameComputerAssociation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.TestClass.inputStreamPort.executor": "Run",
+    "JUnit.TestClass.testDecoding.executor": "Run",
     "JUnit.TestClass.testDownload.executor": "Run",
     "JUnit.TestClass.testXmodemReceiver.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -65,13 +65,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lagzal/Desktop/jermit",
+    "last_opened_file_path": "C:/Users/lagzal/IdeaProjects/embeded application",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -81,6 +81,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lagzal\IdeaProjects\embeded application" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lagzal\IdeaProjects\embeded application\src\main\resources" />
       <recent name="C:\Users\lagzal\IdeaProjects\embeded application\src\main\java\org\example" />
@@ -89,7 +92,7 @@
       <recent name="org.example.tools" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestClass.testXmodemReceiver">
+  <component name="RunManager" selected="JUnit.TestClass.testDecoding">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="embeded-application" />
@@ -108,6 +111,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestClass" />
       <option name="METHOD_NAME" value="inputStreamPort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.testDecoding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="embeded-application" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <option name="METHOD_NAME" value="testDecoding" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass.testDecoding" />
         <item itemvalue="JUnit.TestClass.testXmodemReceiver" />
         <item itemvalue="JUnit.TestClass.testDownload" />
         <item itemvalue="JUnit.TestClass.inputStreamPort" />
@@ -171,7 +185,10 @@
       <workItem from="1709738163216" duration="4926000" />
       <workItem from="1709754224367" duration="5740000" />
       <workItem from="1709807292186" duration="7392000" />
-      <workItem from="1709836806811" duration="11719000" />
+      <workItem from="1709836806811" duration="11843000" />
+      <workItem from="1709890479782" duration="1907000" />
+      <workItem from="1709898958231" duration="18000" />
+      <workItem from="1710004042192" duration="7397000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -205,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709645412193</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that.">
+      <option name="closed" value="true" />
+      <created>1709848652290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709848652290</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +241,8 @@
     <MESSAGE value="Xmodem receiver implementation" />
     <MESSAGE value="rename Models package" />
     <MESSAGE value="set up the test properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up the test properly" />
+    <MESSAGE value="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that." />
+    <option name="LAST_COMMIT_MESSAGE" value="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
