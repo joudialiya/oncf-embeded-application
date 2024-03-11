@@ -16,6 +16,16 @@ public class DiagnosticRecord {
     {
         return String.format("%02X%02X", bytes[4], bytes[5]);
     }
+    public String getType()
+    {
+        int type = bytes[0] & 0xff;
+        return switch (type) {
+            case 3 -> "status code";
+            case 1 -> "start failure";
+            case 2 -> "end of failure";
+            default -> "";
+        };
+    }
     public int getVelocity()
     {
         int result = bytes[6] & 0xff;

@@ -14,8 +14,9 @@ import java.io.Writer;
 /* this class recreate the function of taf view, it provides a static method that
 takes the encoded file and decode it into csv file */
 public class DiagnosticFileDecoder {
-    private static final boolean DEBUG = false;
-    public static void decode(String filename, String outputFilename)
+    private static final boolean DEBUG = true;
+    public String ResourcePath = null;
+    public void decode(String filename, String outputFilename)
     {
         try {
             InputStream in = new FileInputStream(filename);
@@ -72,6 +73,10 @@ public class DiagnosticFileDecoder {
     {
         if (DEBUG)
             System.out.println("+ Write vehicle number");
+        out.print(diagnosticRecord.getType());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("+ Write vehicle number");
         out.print(diagnosticRecord.getVehicleNumber());
         out.print(";");
         if (DEBUG)
@@ -117,9 +122,8 @@ public class DiagnosticFileDecoder {
         if (breakdownXML != null)
             out.print(breakdownXML.getPdo());
         out.print('\n');
-        out.flush();
     }
-    public static BreakdownXML getCodeDescription(String code)
+    public  BreakdownXML getCodeDescription(String code)
     {
         if (DEBUG)
             System.out.println("Getting description for the code: " + code);

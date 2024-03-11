@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d471c0f3-247c-45f2-88c6-eb99bc8f3db5" name="Changes" comment="the DiagnosticFileDecoder now has a static method that gives more infos about the breakdown code. I ve updated the decode() method too. now it creates a csv file that contains the code information too.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,35 +52,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.TestClass.inputStreamPort.executor": "Run",
-    "JUnit.TestClass.loadXMLDocument.executor": "Run",
-    "JUnit.TestClass.testDecoding.executor": "Run",
-    "JUnit.TestClass.testDownload.executor": "Run",
-    "JUnit.TestClass.testGetCodeDescription.executor": "Run",
-    "JUnit.TestClass.testXmodemReceiver.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lagzal/IdeaProjects/embeded application/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestClass.inputStreamPort.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestClass.loadXMLDocument.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestClass.testDecoding.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestClass.testDownload.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestClass.testGetCodeDescription.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestClass.testXmodemReceiver.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lagzal/IdeaProjects/embeded application/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lagzal\IdeaProjects\embeded application\src\main\resources" />
@@ -146,8 +149,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestClass.testDecoding" />
-        <item itemvalue="JUnit.TestClass.testGetCodeDescription" />
         <item itemvalue="JUnit.TestClass.loadXMLDocument" />
+        <item itemvalue="JUnit.TestClass.testGetCodeDescription" />
         <item itemvalue="JUnit.TestClass.testXmodemReceiver" />
         <item itemvalue="JUnit.TestClass.testDownload" />
       </list>
@@ -188,6 +191,7 @@
       <workItem from="1710004042192" duration="7933000" />
       <workItem from="1710012663575" duration="786000" />
       <workItem from="1710147300600" duration="6728000" />
+      <workItem from="1710154640446" duration="3513000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />

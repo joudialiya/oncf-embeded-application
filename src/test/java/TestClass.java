@@ -1,4 +1,5 @@
 import com.fazecast.jSerialComm.SerialPort;
+import org.example.tools.BreakdownXML;
 import org.example.tools.DiagnosticFileDecoder;
 import org.example.tools.XmodemReceiver;
 import org.hibernate.dialect.SybaseASEDialect;
@@ -40,7 +41,9 @@ public class TestClass {
     @Test
     public void testDecoding()
     {
-        DiagnosticFileDecoder.decode("output", "out.csv");
+        DiagnosticFileDecoder diagnosticFileDecoder = new DiagnosticFileDecoder();
+        diagnosticFileDecoder.ResourcePath = "Resource.xml";
+        diagnosticFileDecoder.decode("output", "out.csv");
     }
     @Test
     public void loadXMLDocument() throws ParserConfigurationException, IOException, SAXException {
@@ -59,7 +62,9 @@ public class TestClass {
     @Test
     public void testGetCodeDescription()
     {
-        var breakdown = DiagnosticFileDecoder.getCodeDescription("400B");
+        DiagnosticFileDecoder diagnosticFileDecoder = new DiagnosticFileDecoder();
+        diagnosticFileDecoder.ResourcePath = "Resource.xml";
+        BreakdownXML breakdown = diagnosticFileDecoder.getCodeDescription("400B");
         System.out.println(breakdown.getDescription() + ";" + breakdown.getPdo().length() + ";" +breakdown.getPdm());
     }
 
