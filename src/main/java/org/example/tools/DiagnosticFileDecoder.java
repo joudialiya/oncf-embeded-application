@@ -14,7 +14,7 @@ import java.io.Writer;
 /* this class recreate the function of taf view, it provides a static method that
 takes the encoded file and decode it into csv file */
 public class DiagnosticFileDecoder {
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
     public static void decode(String filename, String outputFilename)
     {
         try {
@@ -56,54 +56,68 @@ public class DiagnosticFileDecoder {
 
                 // add the base infos extracted from the diagnostic file
                 DiagnosticRecord diagnosticRecord = new DiagnosticRecord(record);
-                if (DEBUG)
-                    System.out.println("+ Write vehicle number");
-                out.print(diagnosticRecord.getVehicleNumber());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("+ Write date");
-                out.print(diagnosticRecord.getDate());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("+ Write time");
-                out.print(diagnosticRecord.getTime());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("+ Write velocity");
-                out.print(diagnosticRecord.getVelocity());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("+ Write line tension");
-                out.print(diagnosticRecord.getLineTension());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("+ Write code");
-                out.print(diagnosticRecord.getCode());
-                out.print(";");
+                writeMainDiagnosticInfos(out, diagnosticRecord);
                 // add information about the breakdown code that we can get form the Resource.xml file
                 BreakdownXML breakdownXML = getCodeDescription(diagnosticRecord.getCode());
-                if (DEBUG)
-                    System.out.println("Write description");
-                if (breakdownXML != null)
-                    out.print(breakdownXML.getDescription());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("Write PDM");
-                if (breakdownXML != null)
-                    out.print(breakdownXML.getPdm());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("Write PDO");
-                if (breakdownXML != null)
-                    out.print(breakdownXML.getPdo());
-                out.print('\n');
-                out.flush();
+                writeSecondaryInfos(out, breakdownXML);
+
             }
         }
         catch (Exception e)
         {
             e.getStackTrace();
         }
+    }
+    private static void writeMainDiagnosticInfos(PrintStream out, DiagnosticRecord diagnosticRecord)
+    {
+        if (DEBUG)
+            System.out.println("+ Write vehicle number");
+        out.print(diagnosticRecord.getVehicleNumber());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("+ Write date");
+        out.print(diagnosticRecord.getDate());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("+ Write time");
+        out.print(diagnosticRecord.getTime());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("+ Write velocity");
+        out.print(diagnosticRecord.getVelocity());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("+ Write line tension");
+        out.print(diagnosticRecord.getLineTension());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("+ Write code");
+        out.print(diagnosticRecord.getCode());
+        out.print(";");
+    }
+    private static void writeSecondaryInfos(PrintStream out, BreakdownXML breakdownXML)
+    {
+        if (DEBUG)
+            System.out.println("Write Device");
+        if (breakdownXML != null)
+            out.print(breakdownXML.getDevice());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("Write description");
+        if (breakdownXML != null)
+            out.print(breakdownXML.getDescription());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("Write PDM");
+        if (breakdownXML != null)
+            out.print(breakdownXML.getPdm());
+        out.print(";");
+        if (DEBUG)
+            System.out.println("Write PDO");
+        if (breakdownXML != null)
+            out.print(breakdownXML.getPdo());
+        out.print('\n');
+        out.flush();
     }
     public static BreakdownXML getCodeDescription(String code)
     {

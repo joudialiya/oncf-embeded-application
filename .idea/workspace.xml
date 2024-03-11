@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d471c0f3-247c-45f2-88c6-eb99bc8f3db5" name="Changes" comment="add Diagnostic File Decoder that recreates the tav view behavior">
-      <change afterPath="$PROJECT_DIR$/Resource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/BreakdownXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d471c0f3-247c-45f2-88c6-eb99bc8f3db5" name="Changes" comment="the DiagnosticFileDecoder now has a static method that gives more infos about the breakdown code. I ve updated the decode() method too. now it creates a csv file that contains the code information too.">
+      <change beforePath="$PROJECT_DIR$/out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +187,7 @@
       <workItem from="1709898958231" duration="18000" />
       <workItem from="1710004042192" duration="7933000" />
       <workItem from="1710012663575" duration="786000" />
-      <workItem from="1710147300600" duration="6260000" />
+      <workItem from="1710147300600" duration="6728000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -241,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710011564434</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="the DiagnosticFileDecoder now has a static method that gives more infos about the breakdown code. I ve updated the decode() method too. now it creates a csv file that contains the code information too.">
+      <option name="closed" value="true" />
+      <created>1710153641952</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710153641952</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +258,8 @@
     <MESSAGE value="set up the test properly" />
     <MESSAGE value="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that." />
     <MESSAGE value="add Diagnostic File Decoder that recreates the tav view behavior" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Diagnostic File Decoder that recreates the tav view behavior" />
+    <MESSAGE value="the DiagnosticFileDecoder now has a static method that gives more infos about the breakdown code. I ve updated the decode() method too. now it creates a csv file that contains the code information too." />
+    <option name="LAST_COMMIT_MESSAGE" value="the DiagnosticFileDecoder now has a static method that gives more infos about the breakdown code. I ve updated the decode() method too. now it creates a csv file that contains the code information too." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
