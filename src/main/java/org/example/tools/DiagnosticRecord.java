@@ -14,7 +14,7 @@ public class DiagnosticRecord {
 
     public String getCode()
     {
-        return String.format("%02x%02x", bytes[4], bytes[5]);
+        return String.format("%02X%02X", bytes[4], bytes[5]);
     }
     public int getVelocity()
     {

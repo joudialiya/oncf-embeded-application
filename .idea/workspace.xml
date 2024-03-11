@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d471c0f3-247c-45f2-88c6-eb99bc8f3db5" name="Changes" comment="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that.">
-      <change afterPath="$PROJECT_DIR$/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" afterDir="false" />
+    <list default="true" id="d471c0f3-247c-45f2-88c6-eb99bc8f3db5" name="Changes" comment="add Diagnostic File Decoder that recreates the tav view behavior">
+      <change afterPath="$PROJECT_DIR$/Resource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/BreakdownXML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/RameComputerAssociation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/RameComputerAssociation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticFileDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/tools/DiagnosticRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,15 +57,17 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.TestClass.inputStreamPort.executor": "Run",
+    "JUnit.TestClass.loadXMLDocument.executor": "Run",
     "JUnit.TestClass.testDecoding.executor": "Run",
     "JUnit.TestClass.testDownload.executor": "Run",
+    "JUnit.TestClass.testGetCodeDescription.executor": "Run",
     "JUnit.TestClass.testXmodemReceiver.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lagzal/IdeaProjects/embeded application",
+    "last_opened_file_path": "C:/Users/lagzal/IdeaProjects/embeded application/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,9 +84,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lagzal\IdeaProjects\embeded application\src\main\resources" />
       <recent name="C:\Users\lagzal\IdeaProjects\embeded application" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lagzal\IdeaProjects\embeded application" />
       <recent name="C:\Users\lagzal\IdeaProjects\embeded application\src\main\resources" />
       <recent name="C:\Users\lagzal\IdeaProjects\embeded application\src\main\java\org\example" />
     </key>
@@ -93,24 +97,11 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestClass.testDecoding">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="embeded-application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestClass.inputStreamPort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestClass.loadXMLDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="embeded-application" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestClass" />
-      <option name="METHOD_NAME" value="inputStreamPort" />
+      <option name="METHOD_NAME" value="loadXMLDocument" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,6 +127,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestClass.testGetCodeDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="embeded-application" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <option name="METHOD_NAME" value="testGetCodeDescription" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestClass.testXmodemReceiver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="embeded-application" />
       <option name="PACKAGE_NAME" value="" />
@@ -149,10 +150,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestClass.testDecoding" />
+        <item itemvalue="JUnit.TestClass.testGetCodeDescription" />
+        <item itemvalue="JUnit.TestClass.loadXMLDocument" />
         <item itemvalue="JUnit.TestClass.testXmodemReceiver" />
         <item itemvalue="JUnit.TestClass.testDownload" />
-        <item itemvalue="JUnit.TestClass.inputStreamPort" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +189,9 @@
       <workItem from="1709836806811" duration="11843000" />
       <workItem from="1709890479782" duration="1907000" />
       <workItem from="1709898958231" duration="18000" />
-      <workItem from="1710004042192" duration="7397000" />
+      <workItem from="1710004042192" duration="7933000" />
+      <workItem from="1710012663575" duration="786000" />
+      <workItem from="1710147300600" duration="6260000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -230,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709848652290</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add Diagnostic File Decoder that recreates the tav view behavior">
+      <option name="closed" value="true" />
+      <created>1710011564434</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710011564434</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +253,8 @@
     <MESSAGE value="rename Models package" />
     <MESSAGE value="set up the test properly" />
     <MESSAGE value="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that." />
-    <option name="LAST_COMMIT_MESSAGE" value="the CCU uses Xmodem CRC not the original one, so i ve updated the XmodemReceiver class to handle that." />
+    <MESSAGE value="add Diagnostic File Decoder that recreates the tav view behavior" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Diagnostic File Decoder that recreates the tav view behavior" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

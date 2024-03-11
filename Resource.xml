@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<resource vers="7">
+  <uct>
+    <item code="0x8000">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x8001">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Perte de redondance, ligne A MVB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Perte de redondance, ligne A MVB]]></pdo>
+    </item>
+    <item code="0x8002">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Perte de redondance, ligne B MVB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Perte de redondance, ligne B MVB]]></pdo>
+    </item>
+    <item code="0x8003">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Perte de la ligne A1 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ligne A1 WTB degradee]]></pdo>
+    </item>
+    <item code="0x8004">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Perte de la ligne B1 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ligne B1 WTB degradee]]></pdo>
+    </item>
+    <item code="0x8005">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Perte de la ligne A2 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ligne A2 WTB degradee]]></pdo>
+    </item>
+    <item code="0x8006">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Perte de la ligne B2 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ligne B2 WTB degradee]]></pdo>
+    </item>
+    <item code="0x8007">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Noud debranche du reseau]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Attendre que la signalisation <ATTENTE> s'eteigne Page 414]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Noud debranche du reseau]]></pdo>
+    </item>
+  </uct>
+  <ccu>
+    <item code="0x2000">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[***************************]]></pdo>
+    </item>
+    <item code="0x2001">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Fermeture ratee de l'interrupteur extra-rapide - Verifier le circuit commande interrupteur extra-rapide]]></pdo>
+    </item>
+    <item code="0x2002">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Fermeture ratee de l'interrupteur extra-rapide - Verifier le circuit commande interrupteur extra-rapide]]></pdo>
+    </item>
+    <item code="0x2003">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Fermeture ratee de l'interrupteur extra-rapide - Contacteur pre-charge filtre reseau (1KCF) ne se ferme pas]]></pdo>
+    </item>
+    <item code="0x2004">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'Actionnement et le Groupe Statique progressivement et refermer l'interrupteur extra rapide. Page 418 et 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Fil train ouverture de l'interrupteur extra-rapide a la masse cause par l'actionnement ou par le groupe statique]]></pdo>
+    </item>
+    <item code="0x2005">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance, ligne A MVB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance, ligne A MVB]]></pdo>
+    </item>
+    <item code="0x2006">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance, ligne B MVB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance, ligne B MVB]]></pdo>
+    </item>
+    <item code="0x2007">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de la ligne A1 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Ligne A1 WTB degradee]]></pdo>
+    </item>
+    <item code="0x2008">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de la ligne B1 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Ligne B1 WTB degradee]]></pdo>
+    </item>
+    <item code="0x2009">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de la ligne A2 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Ligne A1 WTB degradee]]></pdo>
+    </item>
+    <item code="0x200A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de la ligne B2 WTB]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Poursuivre la mission]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Ligne B1 WTB degradee]]></pdo>
+    </item>
+    <item code="0x200B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Noud debranche du reseau]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Attendre que la signalisation <ATTENTE> s'eteigne Page 414]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Noud debranche du reseau]]></pdo>
+    </item>
+    <item code="0x200C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons de l'AZ2 et du GS1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons de l'AZ2 et du GS1]]></pdo>
+    </item>
+    <item code="0x200D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons du GS2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons du GS2]]></pdo>
+    </item>
+    <item code="0x200E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons du GS2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons du GS2]]></pdo>
+    </item>
+    <item code="0x200F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons de l'AZ1 et du GS2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons de l'AZ1 et du GS2]]></pdo>
+    </item>
+    <item code="0x2010">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons du GS1 et du GS2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons du GS1 et du GS2]]></pdo>
+    </item>
+    <item code="0x2011">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons de l'AZ2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons de l'AZ2]]></pdo>
+    </item>
+    <item code="0x2012">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons de l'AZ2 et du GS2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Tension presente seulement aux terminaisons de l'AZ2 et du GS2]]></pdo>
+    </item>
+    <item code="0x2013">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons du GS1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons du GS1]]></pdo>
+    </item>
+    <item code="0x2014">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons de l'AZ1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Aucune tension seulement aux terminaisons de l'AZ1]]></pdo>
+    </item>
+    <item code="0x2015">
+      <des m2c="0" m3c="0" cop="4"><![CDATA[Tension presente sur tous les modules]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="4"><![CDATA[Tension presente sur tous les modules]]></pdo>
+    </item>
+    <item code="0x2016">
+      <des m2c="0" m3c="0" cop="3"><![CDATA[clé double de banc insérée.]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2017">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide provoquee par l'activation du relais differentiel general]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer l'interrupteur extra-rapide. Si le probleme persiste, exclure l'actionnement de la motrice en panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation relais differentiel general]]></pdo>
+    </item>
+    <item code="0x2018">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, du tableau synoptique ouvrir le sectionneur 1QAT, ouvrir le stotz 3F10 (tableau QC) et refermer l'interrupteur extra-rapide. Page 418-420-432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation relais courant maxi.]]></pdo>
+    </item>
+    <item code="0x2019">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Fermeture ratee de l'interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation relais courant maxi. delesteur des charges]]></pdo>
+    </item>
+    <item code="0x201A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'actionnement et refermer l'interrupteur extra-rapide. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation protections Controle Actionnement (TCU)]]></pdo>
+    </item>
+    <item code="0x201B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide a cause de l'abaissement du pantographe(s)]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Lever le pantographe/s]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Commande d'abaisser le pantographe avec l'interrupteur extra-rapide ferme]]></pdo>
+    </item>
+    <item code="0x201C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Autorisation fermeture interrupteur extra-rapide inhibee par le combinateur de terre en position de masse]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat correcte du combinateur de terre]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Tentative d'activation avec le combinateur de terre (1KMT)a la masse]]></pdo>
+    </item>
+    <item code="0x201D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Autorisation fermeture interrupteur extra-rapide inhibee a cause de l'interrupteur GS ON]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Autorisation fermeture interrupteur extra-rapide inhibee a cause de l'interrupteur GS ON]]></pdo>
+    </item>
+    <item code="0x201E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Configuration haute tension pas definie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir le sectionneur 1QAT et activer le BM de l'autre motrice. Pages 418-420-432-(407)]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verification fonctionnalite des sectionneurs de la motrice]]></pdo>
+    </item>
+    <item code="0x201F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Autorisation fermeture interrupteur extra-rapide inhibee a cause des leviers de pupitre hors 0]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Mettre les leviers de pupitre a zero]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Autorisation fermeture interrupteur extra-rapide inhibee a cause des leviers de pupitre hors 0]]></pdo>
+    </item>
+    <item code="0x2020">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'Actionnement et le Groupe Statique progressivement et refermer l'interrupteur extra-rapide. Page 418 et 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Fil train ouverture interrupteur extra-rapide a la masse cause par l'actionnement ou par le groupe statique]]></pdo>
+    </item>
+    <item code="0x2021">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Autorisation levage Pantographe ou fermeture interrupteur extra-rapide inhibee]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Actionner le compresseur auxiliaire et attendre environ 5 minutes (pression reservoir auxiliaire > 5.5 bar) avant de continuer]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Actionnement compresseur auxiliaire rate]]></pdo>
+    </item>
+    <item code="0x2022">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F10 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).En cas de resultat positif, Page 414. En case de resultat negatif, lever le pantographe de l'autre motrice et fermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation disjoncteur 3F10]]></pdo>
+    </item>
+    <item code="0x2023">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Placer le selecteur 3S21 a la valeur conforme a la tension ligne. Page 414]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Selecteur tension ligne 3S21 pas conforme a la la tension d'alimentation]]></pdo>
+    </item>
+    <item code="0x2024">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Configuration sectionneurs inhibee a cause de l'interrupteur extra-rapide ferme]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir l'interrupteur extra-rapide et effectuer la configuration demandee]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Configuration sectionneurs demandee avec interrupteur extra-rapide ferme]]></pdo>
+    </item>
+    <item code="0x2025">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Configuration sectionneurs motrice pas possible]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de l'interrupteur 3F12 de la motrice en panne(s'il est ferme, il faut l'ouvrir et le refermer)]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Actionnement disjoncteur 3F12]]></pdo>
+    </item>
+    <item code="0x2026">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Sectionneur actionnement 1QAZ) ne s'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir le sectionneur a la main selon les reglementations]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Sectionneur 1QAZ ne s'ouvre pas lors de la commande d'ouverture]]></pdo>
+    </item>
+    <item code="0x2027">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Sectionneur actionnement (1QAZ)ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer le sectionneur a la main selon les reglementations]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Sectionneur 1QAZ ne se ferme pas lors de la commande de fermeture]]></pdo>
+    </item>
+    <item code="0x2028">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Sectionneur groupe statique (1QGS)ne s'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir le sectionneur a la main selon les reglementations]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Sectionneur 1QGS ne s'ouvre pas lors de la commande d'ouverture]]></pdo>
+    </item>
+    <item code="0x2029">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Sectionneur groupe statique (1QGS) ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer le sectionneur a la main selon les reglementations]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Sectionneur 1QGS ne se ferme pas lors de la commande de fermeture]]></pdo>
+    </item>
+    <item code="0x202A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Sectionneur conduite haute tension (1QAT) ne s'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir le sectionneur a la main selon les reglementations]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Sectionneur 1QAT ne s'ouvre pas lors de la commande d'ouverture]]></pdo>
+    </item>
+    <item code="0x202B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Sectionneur conduite haute tension (1QAT) ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer le sectionneur a la main selon les reglementations]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Sectionneur 1QAT ne se ferme pas lors de la commande de fermeture]]></pdo>
+    </item>
+    <item code="0x202C">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Sectionneur 1QAZ ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x202D">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Sectionneur 1QAZ ferme]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x202E">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Sectionneur 1QGS ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x202F">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Sectionneur 1QGS ferme]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2030">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Sectionneur 1QAT ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2031">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Sectionneur 1QAT ferme]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2032">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance levier  AV/IND]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[A la fin de la marche, il faut signaliser la panne selon les reglementations en vigueur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne d'un micro-interrupteur levier AV-IN (position arriere)]]></pdo>
+    </item>
+    <item code="0x2033">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Placer les leviers en position de  0]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Demande de placer les leviers en position de 0]]></pdo>
+    </item>
+    <item code="0x2034">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance levier  AV/IND]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[A la fin de la marche, il faut signaliser la panne selon les reglementations en vigueur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne d'un micro-interrupteur levier AV-IN (position avant)]]></pdo>
+    </item>
+    <item code="0x2035">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance levier  AV/IND]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[A la fin de la marche, il faut signaliser la panne selon les reglementations en vigueur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne d'un micro-interrupteur levier AV-IN (position zero)]]></pdo>
+    </item>
+    <item code="0x2036">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Perte de redondance levier  AV/IND]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[A la fin de la marche, il faut signaliser la panne selon les reglementations en vigueur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne d'un micro-interrupteur levier AV-IN]]></pdo>
+    </item>
+    <item code="0x2037">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Erreur de communication du Teloc]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2038">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Essai anti-incendie rate remorque rame 3]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Essai anti-incendie rate remorque rame 3]]></pdo>
+    </item>
+    <item code="0x2039">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Essai anti-incendie rate motrice rame 3]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Essai anti-incendie rate motrice rame 3]]></pdo>
+    </item>
+    <item code="0x203A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x203B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x203C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x203D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Levier de couple LCA en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Maitriser la marche avec le levier de marche manuelle. Page 414]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne d'un micro-interrupteur levier LCA]]></pdo>
+    </item>
+    <item code="0x203E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le circuit transducteur tension ligne sur la motrice de la rame 3]]></pdo>
+    </item>
+    <item code="0x203F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2040">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2041">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2042">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne levier programmation vitesse]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Maitriser la marche avec le levier de marche manuelle. Page 414]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne d'un micro-interrupteur levier LV]]></pdo>
+    </item>
+    <item code="0x2043">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le circuit transducteur tension ligne]]></pdo>
+    </item>
+    <item code="0x2044">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le circuit transducteur tension ligne]]></pdo>
+    </item>
+    <item code="0x2045">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le circuit transducteur tension ligne sur la motrice de la rame 2]]></pdo>
+    </item>
+    <item code="0x2046">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le circuit transducteur tension ligne sur la remorque de la rame 2]]></pdo>
+    </item>
+    <item code="0x2047">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Le compresseur auxiliaire ne fonctionne pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Lever le pantographe de l'autre motrice. Page 433]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur compresseur auxiliaire (3K02) ne se ferme pas]]></pdo>
+    </item>
+    <item code="0x2048">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur compresseur auxiliaire normalement branche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir le stotz 3F06 sur le tableau QC. Page 433]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur compresseur auxiliaire (3K02) ne s'ouvre pas]]></pdo>
+    </item>
+    <item code="0x2049">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F06 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).En cas de resultat positif, page 414. En cas de resultat negatif- page 433]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Disjoncteur protection circuit air comprime 3F06 ouvert]]></pdo>
+    </item>
+    <item code="0x204A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x204B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x204C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le groupe statique du tableau synoptique. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur sortie groupe statique (2K01) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x204D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Charges triphasees pas alimentees]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Du tableau synoptique, exclure l'Actionnement et le Groupe Statique. Page 418-420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur charges MT de la motrice (2K02) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x204E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne contacteur ligne MT]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Du tableau synoptique, exclure l'Actionnement et le Groupe Statique. Page 418-420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur ligne MT de la rame (2K03) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x204F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne contacteur MT de la Prise Atelier]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Continuer le service normalement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur MT de prise atelier (2K04) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x2050">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Groupe Statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le groupe statique du tableau synoptique. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur sortie groupe statique (2K01) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x2051">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur general charges MT de la motrice n'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Continuer le service normalement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur charges MT de la motrice (2K02) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x2052">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture contacteur 2K03 ratee]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Groupe Statique du tableau synoptique. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur ligne MT (2K03) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x2053">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne contacteur prise atelier]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Groupe pas utilisable. Page 403]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur MT de prise atelier  (2K04) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x2054">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Prise atelier MT alimentee]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier que la prise MT n'est pas branchee sur cette motrice. En cas de palpage negatif, activer la rame]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Relais sequence des phases (2K05) excite indument]]></pdo>
+    </item>
+    <item code="0x2055">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension d'entree maxi. Groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Activation protection provisoire. Le groupe est retabli automatiquement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Tension d'entree maxi. Groupe statique]]></pdo>
+    </item>
+    <item code="0x2056">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide a cause de l'activation de la protection du groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer l'interrupteur extra-rapide et rebrancher les groupes statiques]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Surtension de ligne en entree au groupe statique]]></pdo>
+    </item>
+    <item code="0x2057">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide a cause de l'activation de la protection du groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer l'interrupteur extra-rapide et rebrancher les groupes statiques]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Courant d'entree max. groupe statique]]></pdo>
+    </item>
+    <item code="0x2058">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Groupe statique en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec le groupe statique exclu. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Court circuit module diodes re-circulation groupe statique]]></pdo>
+    </item>
+    <item code="0x2059">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide a cause de l'activation de la protection groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer l'interrupteur extra-rapide et rebrancher les groupes statiques]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Courant de sortie maxi chopper groupe statique]]></pdo>
+    </item>
+    <item code="0x205A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension intermediaire maxi groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Activation protection provisoire. Le groupe est retabli automatiquement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Tension intermediaire maxi groupe statique]]></pdo>
+    </item>
+    <item code="0x205B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Groupe statique en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec GS exclu. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique BOD groupe statique]]></pdo>
+    </item>
+    <item code="0x205C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide a cause de l'activation de la protection du groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer l'interrupteur extra-rapide et rebrancher les groupes statiques]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Courant de sortie maxi inverseur groupe statique]]></pdo>
+    </item>
+    <item code="0x205D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection provisoire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne « power good » alimentateurs controle groupe statique]]></pdo>
+    </item>
+    <item code="0x205E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Groupe statique en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec GS exclu. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique  gate_units chopper groupe statique]]></pdo>
+    </item>
+    <item code="0x205F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension d'entree minimale groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Activation protection provisoire. Le groupe est retabli automatiquement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Tension d'entree minimale groupe statique]]></pdo>
+    </item>
+    <item code="0x2060">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension intermediaire minimale groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Activation protection provisoire. Le groupe est retabli automatiquement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Tension intermediaire minimale groupe statique]]></pdo>
+    </item>
+    <item code="0x2061">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection temporaire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Activation protection temporaire. Le groupe est retabli automatiquement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[II Limite prolongee groupe statique]]></pdo>
+    </item>
+    <item code="0x2062">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Groupe statique en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec GS exclu. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucune tension de sortie groupe statique]]></pdo>
+    </item>
+    <item code="0x2063">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection provisoire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucune ventilation colonne 1 groupe statique]]></pdo>
+    </item>
+    <item code="0x2064">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection provisoire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucune ventilation colonne 2 groupe statique]]></pdo>
+    </item>
+    <item code="0x2065">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection provisoire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucune ventilation colonne 3 groupe statique]]></pdo>
+    </item>
+    <item code="0x2066">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Groupe Statique en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec GS exclu. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucune tension de sortie groupe statique]]></pdo>
+    </item>
+    <item code="0x2067">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection provisoire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique phase R groupe statique]]></pdo>
+    </item>
+    <item code="0x2068">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique condensateur phase R groupe statique]]></pdo>
+    </item>
+    <item code="0x2069">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique condensateur 2 phase R groupe statique]]></pdo>
+    </item>
+    <item code="0x206A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Echauffement limite phase R groupe statique]]></pdo>
+    </item>
+    <item code="0x206B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique phase S groupe statique]]></pdo>
+    </item>
+    <item code="0x206C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique condensateur 1 phase S groupe statique]]></pdo>
+    </item>
+    <item code="0x206D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure le Groupe Statique e refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique condensateur 2 phase S groupe statique]]></pdo>
+    </item>
+    <item code="0x206E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection temporaire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Echauffement limite phase S groupe statique]]></pdo>
+    </item>
+    <item code="0x206F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation protection temporaire groupe statique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le groupe statique]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique phase T groupe statique]]></pdo>
+    </item>
+    <item code="0x2070">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide En cas de resultat negatif, exclure le Groupe Statique e refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique condensateur 1 phase T groupe statique]]></pdo>
+    </item>
+    <item code="0x2071">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide En cas de resultat negatif, exclure le Groupe Statique e refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation systeme diagnostique condensateur 2 phase T groupe statique]]></pdo>
+    </item>
+    <item code="0x2072">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide En cas de resultat negatif, exclure le Groupe Statique e refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Echauffement limite phase T groupe statique]]></pdo>
+    </item>
+    <item code="0x2073">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Groupe Statique en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec GS exclu. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation watch-dog controle groupe statique]]></pdo>
+    </item>
+    <item code="0x2074">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le circuit transducteur tension ligne sur la remorque de la rame 3]]></pdo>
+    </item>
+    <item code="0x2075">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 5F01 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).En cas de resultat positif,Page 414. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur 5F01]]></pdo>
+    </item>
+    <item code="0x2076">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 5F02 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).En cas de resultat positif Page 414. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur 5F02]]></pdo>
+    </item>
+    <item code="0x2077">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F01 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).En cas de resultat positif Page 414. En cas de resultat negatif, exclure le Groupe Statique du tableau synoptique. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire ventilateurs groupe statique (2F01)]]></pdo>
+    </item>
+    <item code="0x2078">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Le Groupe Statique ne fonctionne pas a cause de l'activation de la vanne d'air]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le groupe statique. A la fin de la marche, refermer la vanne d'air selon les reglementations en vigueur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Vanne d'air groupe statique ouverte]]></pdo>
+    </item>
+    <item code="0x2079">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur 2k01 en position "ferme"]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur 2k01 en position "ferme"]]></pdo>
+    </item>
+    <item code="0x207A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F07 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire chargeur de batterie (2F07)]]></pdo>
+    </item>
+    <item code="0x207B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F23 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur alimentation controle chargeur de batterie  (3F23)]]></pdo>
+    </item>
+    <item code="0x207C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Chargeur de Batterie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Chargeur de Batterie du tableau synoptique. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur thermique radiateurs chargeur de batterie]]></pdo>
+    </item>
+    <item code="0x207D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Chargeur de Batterie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Chargeur de Batterie du tableau synoptique. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne puissance chargeur de batterie]]></pdo>
+    </item>
+    <item code="0x207E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Chargeur de Batterie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Chargeur de Batterie du tableau synoptique. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne controle chargeur de batterie]]></pdo>
+    </item>
+    <item code="0x207F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Chargeur de Batterie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Chargeur de Batterie du tableau synoptique. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne carte RECA chargeur de batterie]]></pdo>
+    </item>
+    <item code="0x2080">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Chargeur de Batterie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Chargeur de Batterie du tableau synoptique. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne carte SICA chargeur de batterie]]></pdo>
+    </item>
+    <item code="0x2081">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Chargeur de Batterie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Chargeur de Batterie du tableau synoptique Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur 2K11 ne ferme pas]]></pdo>
+    </item>
+    <item code="0x2082">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Chargeur de Batterie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le Chargeur de Batterie en ouvrant le stotz 2F07. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur 2K11 n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x2083">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Freinage d'urgence applique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur avant de continuer la marche, verifier les causes de l'application du freinage d'urgence]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Pressostat freinage d'urgence active]]></pdo>
+    </item>
+    <item code="0x2084">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Autorisation de marche inhibee a cause de la pression insuffisante dans la conduite generale]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir la pression dans la conduite generale]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Pression dans la conduite generale inferieure aux valeurs demandees]]></pdo>
+    </item>
+    <item code="0x2085">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucun signal Power Good alimentateur DC/DC]]></pdo>
+    </item>
+    <item code="0x2086">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Niveau limite de l'eau dans le reservoir]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Niveau limite de l'eau dans le reservoir]]></pdo>
+    </item>
+    <item code="0x2087">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Niveau minimal de l'eau dans le reservoir]]></pdo>
+    </item>
+    <item code="0x2088">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 6F02 ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Referme l'interrupteur 6F02]]></pdo>
+    </item>
+    <item code="0x2089">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Haute temperature de l'eau entree modules de la sonde analogique]]></pdo>
+    </item>
+    <item code="0x208A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Haute temperature de l'eau entree modules de la sonde thermique digitale]]></pdo>
+    </item>
+    <item code="0x208B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Pression minimale de l'eau avec la pompe fonctionnant]]></pdo>
+    </item>
+    <item code="0x208C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Debit minimal de l'eau dans le circuit de traitement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Debit minimal de l'eau dans le circuit de traitement]]></pdo>
+    </item>
+    <item code="0x208D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Debit minimal de l'eau dans le circuit principale]]></pdo>
+    </item>
+    <item code="0x208E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Niveau limite minimal resistivite de l'eau dans le circuit principale]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Niveau limite minimal resistivite de l'eau dans le circuit principale]]></pdo>
+    </item>
+    <item code="0x208F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Resistivite minimale de l'eau dans le circuit principale]]></pdo>
+    </item>
+    <item code="0x2090">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Resistivite minimale de l'eau dans le circuit de traitement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Resistivite minimale de l'eau dans le circuit de traitement]]></pdo>
+    </item>
+    <item code="0x2091">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Centrale hydraulique ne fonctionne pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement du tableau synoptique Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Disjoncteur 3F07 declenche]]></pdo>
+    </item>
+    <item code="0x2092">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Haute temperature inductance filtre intermediaire]]></pdo>
+    </item>
+    <item code="0x2093">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Haute temperature inductance filtre reseau]]></pdo>
+    </item>
+    <item code="0x2094">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 4F01 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).  En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement et refermer l'interrupteur extra-rapide  Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation disjoncteur  4F01]]></pdo>
+    </item>
+    <item code="0x2095">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 4F02 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement et refermer l'interrupteur extra-rapide  Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation disjoncteur  4F02]]></pdo>
+    </item>
+    <item code="0x2096">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 4F03 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement et refermer l'interrupteur extra-rapide  Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation disjoncteur  4F03]]></pdo>
+    </item>
+    <item code="0x2097">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Freinage Electrique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le freinage electrique du tableau synoptique Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne/ activation dispositif 1A01 image thermique rheostat de freinage]]></pdo>
+    </item>
+    <item code="0x2098">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Freinage Electrique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le freinage electrique du tableau synoptique Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Panne/ activation dispositif 1A02 image thermique rheostat de freinage]]></pdo>
+    </item>
+    <item code="0x2099">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F06 (tableau QB) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif exclure du tableau synoptique le moto-compresseur en panne Page 452]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Interrupteur tripolaire 2F06 ouvert]]></pdo>
+    </item>
+    <item code="0x209A">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F25 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif exclure du tableau synoptique le moto-compresseur en panne Page 452]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Interrupteur unipolaire 3F25 ouvert]]></pdo>
+    </item>
+    <item code="0x209B">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Moto-compresseur ne fonctionne pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le moto-compresseur du tableau synoptique. Page 452]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation thermostat temperature huile moto-compresseur (3B12)]]></pdo>
+    </item>
+    <item code="0x209C">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Demande d'insertion compresseurs directs]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Demande d'insertion compresseurs directs]]></pdo>
+    </item>
+    <item code="0x209D">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Moto-compresseur ne fonctionne pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le moto-compresseur du tableau synoptique Page 452]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation pressostat efficacite moto-compresseur (3E05)]]></pdo>
+    </item>
+    <item code="0x209E">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Niveau huile bas moto-compresseur]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Signaliser la panne sur le livre de bord]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Niveau huile bas moto-compresseur]]></pdo>
+    </item>
+    <item code="0x209F">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Moto-compresseur ne fonctionne pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le moto-compresseur du tableau synoptique. Page 452]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire moto-compresseur (2K10) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x20A0">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne contacteur moto-compresseur]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Avec les groupes statiques debranches, ouvrir le stotz 2F06 sur le tableau QB. Page 452]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire moto-compresseur (2K10) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x20A1">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F01 (Tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer). En cas de resultat positif Page 414. En cas de resultat negatif, exclure le Groupe Statique du tableau synoptique Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire 2F01]]></pdo>
+    </item>
+    <item code="0x20A2">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F02 (Tableau QB) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).  En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement du tableau synoptique Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire moto-ventilateur 1 (2F02)]]></pdo>
+    </item>
+    <item code="0x20A3">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F03 (Tableau QB) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).   En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement du tableau synoptique Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire moto-ventilateur 2 (2F03)]]></pdo>
+    </item>
+    <item code="0x20A4">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F05 (Tableau QB) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).   En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement du tableau synoptique Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire moto-pompe (2F05)]]></pdo>
+    </item>
+    <item code="0x20A5">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F08 (Tableau QB) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).   En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement du tableau synoptique Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire vitesse faible ventilateur radiateur (2F08)]]></pdo>
+    </item>
+    <item code="0x20A6">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F04 (Tableau QB)ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).   En cas de resultat positif Page 414. En cas de resultat negatif, exclure l'Actionnement du tableau synoptique Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur tripolaire haute vitesse ventilateur radiateur (2F04)]]></pdo>
+    </item>
+    <item code="0x20A7">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire moto-ventilateur 1 (2K06) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x20A8">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur tripolaire 2K06 n'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire moto-ventilateur 1 (2K06) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x20A9">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire moto-ventilateur 2 (2K07) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x20AA">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur tripolaire 2K07 n'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire moto-ventilateur 2 (2K07) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x20AB">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire motopompe (2K09) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x20AC">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur tripolaire 2K09 n'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire moto-pompe (2K09) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x20AD">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire faible vitesse ventilateur radiateur (2K12) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x20AE">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur tripolaire faible vitesse ventilateur radiateur n'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire faible vitesse ventilateur radiateur 2K12) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x20AF">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire haute vitesse ventilateur radiateur (2K08) ne ferme pas]]></pdo>
+    </item>
+    <item code="0x20B0">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Contacteur tripolaire haute vitesse ventilateur radiateur n'ouvre pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur a la fin de la marche, signaliser la panne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Contacteur tripolaire haute vitesse ventilateur radiateur (2K08) n'ouvre pas]]></pdo>
+    </item>
+    <item code="0x20B1">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F28 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).   En cas de resultat positif Page 414. En cas de resultat negatif, exclure du tableau synoptique le freinage electrique Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur interlock (3F28)]]></pdo>
+    </item>
+    <item code="0x20B2">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Freinage Electrique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le freinage electrique du tableau synoptique. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Electrovanne interlock desexcitee indument]]></pdo>
+    </item>
+    <item code="0x20B3">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne Freinage Electrique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure le freinage electrique du tableau synoptique. Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Electrovanne interlock excitee indument]]></pdo>
+    </item>
+    <item code="0x20B4">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F08 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).   En cas de resultat positif Page 414. En cas de resultat negatif ouvrir le stotz 3F10 aussi(QC) Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur dispositif 50 Hz (3F08)]]></pdo>
+    </item>
+    <item code="0x20B5">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x20B6">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Interrupteur 3F01 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer les interrupteurs. En cas de resultat positif Page 414. En cas de resultat negatif Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur sortie chargeur de batterie (3F01)]]></pdo>
+    </item>
+    <item code="0x20B7">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Interrupteur 3F02 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer les interrupteurs. En cas de resultat positif Page 414. En cas de resultat negatif Page 465]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur batterie (3F02)]]></pdo>
+    </item>
+    <item code="0x20B8">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Interrupteur unipolaire circuit commande contacteur insertion batterie ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Si on est au debut de la marche, refermer l'interrupteur 3F03; en cas de marche, effectuer la fermeture de nouveau a la fin de la marche]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Disjoncteur protection circuit commande contacteur declenche]]></pdo>
+    </item>
+    <item code="0x20B9">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F04 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).   En cas de resultat positif Page 414. En cas de resultat negatif Page 441]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur positif d'urgence (3F04)]]></pdo>
+    </item>
+    <item code="0x20BA">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Interrupteur 3F05 (tableau QC) ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer l'interrupteur. En cas de resultat positif Page 414. En cas de resultat negatif Page 423]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur contacteur batterie (3F05)]]></pdo>
+    </item>
+    <item code="0x20BB">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Inconsequence commandes traction/freinage entre TCU/CCU]]></pdo>
+    </item>
+    <item code="0x20BC">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'Actionnement et refermer l'interrupteur extra-rapide Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouverture interrupteur extra-rapide par la diagnostique sur les condensateurs de filtre de pupitre 3]]></pdo>
+    </item>
+    <item code="0x20BD">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Placer le selecteur 3S21 sur la valeur conforme a la tension ligne. Page 414]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Tension ligne 1500 Volt pas conforme a la position du selecteur 3S21]]></pdo>
+    </item>
+    <item code="0x20BE">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Placer le selecteur 3S21 sur la valeur conforme a la tension ligne. Page 414]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Tension ligne 3000 Volt pas conforme a la position du selecteur 3S21]]></pdo>
+    </item>
+    <item code="0x20BF">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F29 ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure du tableau synoptique le sectionneur 1QAT de la motrice qui n'est pas concernee par l'incendie. Page 415-418-420-432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur anti-incendie (3F29)]]></pdo>
+    </item>
+    <item code="0x20C0">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Bouteilles AI vides]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure du tableau synoptique le sectionneur 1QAT de la motrice qui n'est pas concernee par l'incendie. Pages 415-418-420-432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation pressostat efficacite bouteille (3E07)]]></pdo>
+    </item>
+    <item code="0x20C1">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Micro-interrupteur etat vanne d'air non congruent]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Micro-interrupteur etat vanne d'air non congruent]]></pdo>
+    </item>
+    <item code="0x20C2">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Activation d'une sonde thermique lineaire]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation d'une sonde thermique lineaire]]></pdo>
+    </item>
+    <item code="0x20C3">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Incendie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon le reglementations en vigueur, arreter la rame et activer le systeme anti-incendie. Pages 415-418-420-432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation sonde anti-incendie 1]]></pdo>
+    </item>
+    <item code="0x20C4">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Incendie]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon le reglementations en vigueur, arreter la rame et activer le systeme anti-incendie. Pages 415-418-420-432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[[Activation sonde anti-incendie 2]]></pdo>
+    </item>
+    <item code="0x20C5">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Le interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Levage pantographe inhibe  a cause du contacteur pre-charge filtre (1KCF) ferme]]></pdo>
+    </item>
+    <item code="0x20C6">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Interrupteur alimentation afficheur instruments 3F26 ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Si la panne concerne la motrice de tete, refermer l'interrupteur. En cas de re-ouverture, utiliser un seul afficheur selon les reglementations en vigueur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur afficheur instruments (3F26)]]></pdo>
+    </item>
+    <item code="0x20C7">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Interrupteur alimentation afficheur diagnostique 3F27 ouvert]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Si la panne concerne la motrice de tete, refermer l'interrupteur. En cas de re-ouverture, utiliser un seul afficheur selon les reglementations en vigueur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur afficheur diagnostique (3F27)]]></pdo>
+    </item>
+    <item code="0x20C8">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'Actionnement et refermer l'interrupteur extra-rapide Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x20C9">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'Actionnement et refermer l'interrupteur extra-rapide Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Time out sur le paquet de Rx de la  TCU]]></pdo>
+    </item>
+    <item code="0x20CA">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Time out sur le paquet de Rx du GS]]></pdo>
+    </item>
+    <item code="0x20CB">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x20CC">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide pour configuration sectionneurs haute tension]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Attendre environ 10 secondes et refermer l'interrupteur extra-rapide]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouverture interrupteur extra-rapide pour configuration sectionneurs haute tension]]></pdo>
+    </item>
+    <item code="0x20CD">
+      <des m2c="0" m3c="0" cop="16"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x20CE">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Tension batteries inferieure a 20 Volt]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure les charges BT qui ne sont pas necessaires et s'il n'est pas possible, continuer la mise en service. Page 403]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Basse tension de batterie ne permet pas la configuration des contacteurs MT]]></pdo>
+    </item>
+    <item code="0x20CF">
+      <des m2c="0" m3c="0" cop="3"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide. Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouverture interrupteur extra-rapide demandee par le controle groupe statique]]></pdo>
+    </item>
+    <item code="0x20D0">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation protection TCU]]></pdo>
+    </item>
+    <item code="0x20D1">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 2F02 et/ou 2F03 (tableau QB) aperti]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le/les stotz (s'ils sont fermes, il faut les ouvrir et les refermer).En cas de resultat positif, Page 414. En cas de resultat negatif, exclure l'Actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteurs tripolaires moto-ventilateurs (2F02 et/ou 2F03)]]></pdo>
+    </item>
+    <item code="0x20D2">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure le Groupe Statique et refermer l'interrupteur extra-rapide Page 420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation protection a cause de l'absence de ventilation groupe statique avec interrupteur extra-rapide ferme]]></pdo>
+    </item>
+    <item code="0x20D3">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'Actionnement et refermer  l'interrupteur extra-rapide. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouverture interrupteur extra-rapide pour la diagnostique sur les condensateurs de filtre de pupitre 1]]></pdo>
+    </item>
+    <item code="0x20D4">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Stotz 3F24 (tableau QC) declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer le stotz (s'il est ferme, il faut l'ouvrir et le refermer).En cas de resultat positif Page 414;  autrement, exclure du tableau synoptique l'Actionnement et le Groupe Statique. Page 418-420]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation interrupteur alimentation contacteurs MT de la motrice (3F24)]]></pdo>
+    </item>
+    <item code="0x20D5">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Traction coupee par le robinet frein qui n'est pas en position correcte]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir le robinet frein]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Traction coupee par le robinet frein qui n'est pas en position correcte]]></pdo>
+    </item>
+    <item code="0x20D6">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Essai anti-incendie OK]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Essai anti-incendie OK]]></pdo>
+    </item>
+    <item code="0x20D7">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Essai anti-incendie KO]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Essai anti-incendie KO]]></pdo>
+    </item>
+    <item code="0x20D8">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Actionnement en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec l'Actionnement exclu. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation protection de power good de la centrale hydraulique]]></pdo>
+    </item>
+    <item code="0x20D9">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Actionnement en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec l'Actionnement exclu. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Pas d'eau dans le reservoir]]></pdo>
+    </item>
+    <item code="0x20DA">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Actionnement en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec l'Actionnement exclu. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucune pression dans le circuit hydraulique]]></pdo>
+    </item>
+    <item code="0x20DB">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Actionnement en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec l'Actionnement exclu. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucun debit d'eau dans le circuit hydraulique]]></pdo>
+    </item>
+    <item code="0x20DC">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Actionnement en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec l'Actionnement exclu. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Activation protection alarme resistivite]]></pdo>
+    </item>
+    <item code="0x20DD">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Actionnement en panne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide et continuer la marche avec l'Actionnement exclu. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Performance incorrecte de l'essai  relais differentiel general]]></pdo>
+    </item>
+    <item code="0x20DE">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Performance incorrecte de l'essai relais courant maximal]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Au cas ou, par consequent, des ouvertures des interrupteurs extra-rapides se presenteraient, lever tous les deux pantographes. En cas de persistance, exclure la section haute tension de la motrice de tete et maintenir le pantographe posterieur en prise de courant]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Performance incorrecte de l'essai relais courant maxi]]></pdo>
+    </item>
+    <item code="0x20DF">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Performance incorrecte de l'essai relais delesteur de charges]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Au cas ou, pendant le service, des ouvertures des interrupteurs extra-rapides se presenteraient, changer le pantographe]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Performance incorrecte de l'essai delesteur de charges]]></pdo>
+    </item>
+    <item code="0x20E0">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Essai anti-incendie rate motrice de queue]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Essai anti-incendie rate motrice de queue]]></pdo>
+    </item>
+    <item code="0x20E1">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Essai anti-incendie rate remorque rame 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Essai anti-incendie rate remorque rame 2]]></pdo>
+    </item>
+    <item code="0x20E2">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Essai anti-incendie rate motrice rame 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Essai anti-incendie rate motrice rame 2]]></pdo>
+    </item>
+    <item code="0x20E3">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Robinet d'isolement pantographe en position isole]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[S'assurer de la position correcte du robinet]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Levage du pantographe inhibe a cause du robinet d'isolement pantographe en position isole]]></pdo>
+    </item>
+    <item code="0x20E4">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Sectionneur manuel des charges MT motrice isole]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Selon les reglementations en vigueur verifier la position du sectionneur MT]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Sectionneur manuel des charges MT  (2S01) en position 'ouvert']]></pdo>
+    </item>
+    <item code="0x20E5">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne telecommande]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Inhiber le pupitre et effectuer un retablissement general. Page 421]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Aucun dialogue entre la motrice de tete et les autres de la composition]]></pdo>
+    </item>
+    <item code="0x20E6">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Ouverture interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, lever les deux pantographes et refermer l'interrupteur extra-rapide Page 438]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[L'interrupteur extra-rapide ne ferme pas a cause de la pre-charge ratee des filtres d'un appareil]]></pdo>
+    </item>
+    <item code="0x20E7">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement du tableau synoptique. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Coasting force a cause de la panne contacteurs MT]]></pdo>
+    </item>
+    <item code="0x20E8">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[L'interrupteur extra-rapide ne se ferme pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Changer le pantographe et refermer l'interrupteur extra-rapide. Page 432]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le circuit de fermeture de l'interrupteur extra-rapide]]></pdo>
+    </item>
+    <item code="0x20E9">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Interrupteur Circuits Commande en position « ouvert »]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Refermer l'interrupteur circuits de commande (3S08)]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Interrupteur circuits de commande en position « ouvert »]]></pdo>
+    </item>
+    <item code="0x20EA">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Exclusion freinage electrique a cause de l'echauffement limite du rheostat]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Exclusion freinage electrique a cause de l'echauffement limite du rheostat]]></pdo>
+    </item>
+    <item code="0x20EB">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Exclusion freinage electrique a cause de l'echauffement limite du rheostat]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Exclusion freinage electrique a cause de l'echauffement limite du rheostat]]></pdo>
+    </item>
+    <item code="0x20EC">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F21 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F21 declenche]]></pdo>
+    </item>
+    <item code="0x20ED">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F17 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F17 declenche]]></pdo>
+    </item>
+    <item code="0x20EE">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F16 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F16 declenche]]></pdo>
+    </item>
+    <item code="0x20EF">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F18 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F18 declenche]]></pdo>
+    </item>
+    <item code="0x20F0">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 6F01 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 6F01 declenche]]></pdo>
+    </item>
+    <item code="0x20F1">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 6F02 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 6F02 declenche]]></pdo>
+    </item>
+    <item code="0x20F2">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F09 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F09 declenche]]></pdo>
+    </item>
+    <item code="0x20F3">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F22 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F22 declenche]]></pdo>
+    </item>
+    <item code="0x20F4">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F15 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F15 declenche]]></pdo>
+    </item>
+    <item code="0x20F5">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F14 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F14 declenche]]></pdo>
+    </item>
+    <item code="0x20F6">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F19 ou 3F20 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F19 ou 3F20 declenche]]></pdo>
+    </item>
+    <item code="0x20F7">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F36 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F36 declenche]]></pdo>
+    </item>
+    <item code="0x20F8">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F11 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l'interrupteur]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F11 declenche]]></pdo>
+    </item>
+    <item code="0x20F9">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F10 declenche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Retablir l/les interrupteur/s ou exclure l'appareil]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Disjoncteur 3F10 declenche]]></pdo>
+    </item>
+    <item code="0x20FA">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Groupe Statique arrete a cause de l'absence d'alimentation]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Groupe Statique arrete a cause de l'absence d'alimentation]]></pdo>
+    </item>
+    <item code="0x20FB">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Verrouillage portes debranche]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Verrouillage portes debranche]]></pdo>
+    </item>
+    <item code="0x20FC">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Suspensions dechargees]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Vitesse limitee a 60 Km/h]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Suspensions dechargees]]></pdo>
+    </item>
+    <item code="0x20FD">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Actionnement exclu a cause du refroidissement rate du circuit hydraulique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Actionnement exclu a cause du refroidissement rate du circuit hydraulique]]></pdo>
+    </item>
+    <item code="0x20FE">
+      <des m2c="9" m3c="9" cop="2"><![CDATA[Panne Centrale Tachygraphique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Panne Centrale Tachygraphique]]></pdo>
+    </item>
+    <item code="0x20FF">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne capteur de vitesse]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2100">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne 2 capteurs de vitesse]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Panne 2 capteurs de vitesse]]></pdo>
+    </item>
+    <item code="0x2101">
+      <des m2c="0" m3c="0" cop="8"><![CDATA[Panne TELOC]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2102">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[VACMA intervention]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2103">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Panne VACMA]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2104">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[VACMA na marche pas]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x2105">
+      <des m2c="0" m3c="0" cop="2"><![CDATA[Coasting pour perte de tension de ligne]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Coasting pour perte de tension de ligne]]></pdm>
+      <pdo m2c="0" m3c="0" cop="2"><![CDATA[Coasting pour perte de tension de ligne]]></pdo>
+    </item>
+  </ccu>
+  <tcu>
+    <item code="0x4000">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[***************************]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[***************************]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[***************************]]></pdo>
+    </item>
+    <item code="0x4001">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Panne actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Effectuer le retablissement au moyen de la touche de fermeture de l'interrupteur extra-rapide et si la panne persiste, exclure l'actionnement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4002">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Ouverture Interrupteur extra-rapide]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Fermer l'interrupteur extra-rapide. En cas de resultat negatif, exclure l'Actionnement et refermer l'interrupteur extra-rapide. Page 418]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4003">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Panne Actionnement]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Exclure l'actionnement et essayer de le retablir apres environ 30 minutes]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4004">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[Panne Actionnement. Panne aux sondes de temperature moteur]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Continuer la marche et informer le personnel d'entretien a la fin du service]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4005">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[TENSION MAXIMALE SEMI-FILTRE 1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4006">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[TENSION MAXIMALE SEMI-FILTRE 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4007">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[COURANT MAXIMAL DE LIGNE]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4008">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[TENSION LIGNE MAXIMALE]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4009">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[COURANT MAXIMAL DE FREINAGE  1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x400A">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[COURANT MAXIMAL DE CHOPPER]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x400B">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME TRANSMISSION MATERIEL (HARDWARE)]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x400C">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME POWER GOOD 5 VOLT]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x400D">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME POWER GOOD 12 VOLT]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x400E">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[PANNE ALIMENTATION CARTES  GTO]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x400F">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME INVERSEUR GATE UNIT SUPERIEUR PHASE R]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4010">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME INVERSEUR GATE UNIT INFERIEUR PHASE R]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4011">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME INVERSEUR GATE UNIT SUPERIEUR PHASE S]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4012">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME INVERSEUR GATE UNIT INFERIEUR PHASE S]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4013">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME INVERSEUR GATE UNIT SUPERIEUR PHASE T]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4014">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME INVERSEUR GATE UNIT INFERIEUR PHASE T]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4015">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME CHOPPER SUPERIEUR GATE UNIT SUPERIEUR]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4016">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME CHOPPER SUPERIEUR GATE UNIT INFERIEUR]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4017">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME CHOPPER INFERIEUR GATE UNIT SUPERIEUR]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4018">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME CHOPPER INFERIEUR GATE UNIT INFERIEUR]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4019">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME GATE UNIT CHOPPER FREINAGE 1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x401A">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME GATE UNIT CHOPPER FREINAGE 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x401B">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ACTIVATION CROW-BAR]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x401C">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[COURANT MAXIMAL FREINAGE 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x401D">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[TENSION MAXIMALE ENTREE INVERSEUR]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x401E">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[COURANT MAXIMAL PHASE T]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x401F">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[COURANT MAXIMAL PHASE S]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4020">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[COURANT MAXIMAL PHASE R]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4021">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME TRANSMISSION SW]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4022">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[DESEQUILIBRE MAXIMAL SEMI-FILTRES]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4023">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[PANNE PICK-UP]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4024">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[ALARME TEMPERATURE MAXIMALE MOTEURS]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4025">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[PANNE PT100]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4026">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[PANNE PICK-UP 1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4027">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[PANNE PICK-UP 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0x4028">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[AUTOTEST TCU OK]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+  </tcu>
+  <ugc>
+    <item code="0xA000">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[***************************]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[***************************]]></pdo>
+    </item>
+    <item code="0xA001">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[0003 Defaut unite UR3 motrice]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier la fonctionnalite des portes 3 et 4 de la motrice. Si les portes ne fonctionnent pas, il faut les isoler]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Controler si l'unite est alimentee. Controler si elle est visible sur le bus CAN et fonctionnel]]></pdo>
+    </item>
+    <item code="0xA002">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[0004 Defaut unite UR4 motrice]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier la fonctionnalite des portes 1 et 2 de la motrice. Si les portes ne fonctionnent pas, il faut les isoler]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Controler si l'unite est alimentee. Controler si elle est visible sur le bus CAN et fonctionnel]]></pdo>
+    </item>
+    <item code="0xA003">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[0005 Defaut unite UR8 motrice]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Arreter la rame et verifier si les signalisations de pupitre correspondant aux portes, suspensions et frein sont conformes a l'etat des appareils]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier si l'unite est alimentee. Verifier si l'unite est visible sur le bus CAN et fonctionnel]]></pdo>
+    </item>
+    <item code="0xA004">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[0008 Defaut unite UR8 motrice]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Arreter la rame et verifier si les signalisations de pupitre correspondant aux portes, suspensions et frein sont conformes a l'etat des appareils]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier si l'unite est alimentee. Verifier si l'unite est visible sur le bus CAN et fonctionnel]]></pdo>
+    </item>
+    <item code="0xA005">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[0011  Defaut unite UR3 rimorchiata]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier la fonctionnalite des portes 3 et 4 de la remorque. Si les portes ne fonctionnent pas, il faut les isoler]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier si l'unite est alimentee. Verifier si l'unite est visible sur le bus CAN et fonctionnel]]></pdo>
+    </item>
+    <item code="0xA006">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[0012   Defaut unite UR6 remorque]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier la fonctionnalite des portes 1 et 2 de la remorque. Si les portes ne fonctionnent pas, il faut les isoler]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier si l'unite est alimentee. Verifier si l'unite est visible sur le bus CAN et fonctionnel]]></pdo>
+    </item>
+    <item code="0xA007">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[0016   Defaut dialogue avec le dispositif antipatinage]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier la fonctionnalite des toutes les portes du vehicule. Si les portes ne fonctionnent pas il faut les isoler]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier si l'unite est alimentee. Verifier si l'unite  est visible sur le bus CAN et fonctionnel]]></pdo>
+    </item>
+    <item code="0xA008">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4100  Panne porte de montee  1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Isoler la porte]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la presence de codes de panne de la UR de gestion]]></pdo>
+    </item>
+    <item code="0xA009">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4101   Porte de montee 1 en etat d'urgence]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdo>
+    </item>
+    <item code="0xA00A">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4123   Defaut porte de montee 1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer l'isolement de la porte, s'il est necessaire]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la fonctionnalite de tous les micro-interrupteurs]]></pdo>
+    </item>
+    <item code="0xA00B">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4200   Panne porte de montee 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Isoler la porte]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la presence de codes de panne de la UR (unite remote)de gestion]]></pdo>
+    </item>
+    <item code="0xA00C">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4201   Porte de montee 2 en etat d'urgence]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdo>
+    </item>
+    <item code="0xA00D">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4223   Defaut porte de montee 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et isoler la porte, s'il est necessaire]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la fonctionnalite de tous les micro-interrupteurs]]></pdo>
+    </item>
+    <item code="0xA00E">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4300  Defaut porte de montee 3]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Isoler la porte]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la presence de codes de panne de la UR de gestion]]></pdo>
+    </item>
+    <item code="0xA00F">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4301   Porte de montee 3 en etat d'urgence]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdo>
+    </item>
+    <item code="0xA010">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4323   Defaut porte de montee 3]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et isoler la porte, s'il est necessaire]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la fonctionnalite de tous les micro-interrupteurs]]></pdo>
+    </item>
+    <item code="0xA011">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4400   Panne porte de montee 4]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Isoler la porte]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la presence de codes de panne de la UR de gestion]]></pdo>
+    </item>
+    <item code="0xA012">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4401   Porte de montee 4 en etat d'urgence]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et effectuer le rearmement]]></pdo>
+    </item>
+    <item code="0xA013">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4423   Defaut Porte de montee 4]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la porte localement et isoler la porte, s'il est necessaire]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Ouvrir et fermer la porte afin de localiser la panne. Verifier la fonctionnalite de tous les micro-interrupteurs]]></pdo>
+    </item>
+    <item code="0xA014">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4606  Poignee frein d'urgence appliquee]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier la situation localement et rearmer la poignee]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier la situation localement et rearmer la poignee]]></pdo>
+    </item>
+    <item code="0xA015">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4704   Frein de stationnement bogie 1 isole]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat du frein de stationnement ; s'il est necessaire, il faut le rearmer]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le bogie localement. S'il est necessaire, il faut le rearmer]]></pdo>
+    </item>
+    <item code="0xA016">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4705  Suspensions pneumatiques pas fonctionnant sur le bogie 1]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Appliquer Page 3113]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la suspension et verifier la fonctionnalite]]></pdo>
+    </item>
+    <item code="0xA017">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4713   Frein de service bogie 1 isole]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat du frein de service et s'il est necessaire rearmer le frein]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le bogie localement. S'il est necessaire, il faut rearmer le bogie]]></pdo>
+    </item>
+    <item code="0xA018">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4804   Frein de stationnement bogie 2 isole]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat du frein de stationnement et, s'il est necessaire, il faut le rearmer]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le bogie localement. S'il est necessaire, effectuer le rearmement]]></pdo>
+    </item>
+    <item code="0xA019">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4805   Suspensions pneumatiques pas fonctionnant sur le bogie 2]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Appliquer Page 3113]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat de la signalisation sur le pupitre et continuer la marche selon les prescriptions correspondantes]]></pdo>
+    </item>
+    <item code="0xA01A">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4813   Frein de service bogie 2 isole]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier l'etat du frein de service et effectuer le rearmement, si necessaire]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier le bogie localement. S'il est necessaire, effectuer le rearmement]]></pdo>
+    </item>
+    <item code="0xA01B">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[6709   Activation signal de SOS de la zone voyageurs handicapes]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[Verifier la situation tout de suite selon les reglementations en viguer]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[Verifier la situation sur place. S'il est necessaire, rearmer en ouvrant la porte de la toilette]]></pdo>
+    </item>
+    <item code="0xA01C">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4608   Frein a main applique]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0xA01D">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[4060   Interrupteur By-pass vitesse antipatinage active]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0xA01E">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[6725   Toilette hors service (Acces inhibe]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+    <item code="0xA01F">
+      <des m2c="0" m3c="0" cop="0"><![CDATA[5700   Perte de redondance UR8]]></des>
+      <pdm m2c="0" m3c="0" cop="0"><![CDATA[]]></pdm>
+      <pdo m2c="0" m3c="0" cop="0"><![CDATA[]]></pdo>
+    </item>
+  </ugc>
+</resource>

@@ -1,5 +1,11 @@
 package org.example.tools;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
@@ -48,14 +54,11 @@ public class DiagnosticFileDecoder {
                 if (endOfFile)
                     break;
 
+                // add the base infos extracted from the diagnostic file
                 DiagnosticRecord diagnosticRecord = new DiagnosticRecord(record);
                 if (DEBUG)
                     System.out.println("+ Write vehicle number");
                 out.print(diagnosticRecord.getVehicleNumber());
-                out.print(";");
-                if (DEBUG)
-                    System.out.println("+ Write code");
-                out.print(diagnosticRecord.getCode());
                 out.print(";");
                 if (DEBUG)
                     System.out.println("+ Write date");
@@ -72,6 +75,27 @@ public class DiagnosticFileDecoder {
                 if (DEBUG)
                     System.out.println("+ Write line tension");
                 out.print(diagnosticRecord.getLineTension());
+                out.print(";");
+                if (DEBUG)
+                    System.out.println("+ Write code");
+                out.print(diagnosticRecord.getCode());
+                out.print(";");
+                // add information about the breakdown code that we can get form the Resource.xml file
+                BreakdownXML breakdownXML = getCodeDescription(diagnosticRecord.getCode());
+                if (DEBUG)
+                    System.out.println("Write description");
+                if (breakdownXML != null)
+                    out.print(breakdownXML.getDescription());
+                out.print(";");
+                if (DEBUG)
+                    System.out.println("Write PDM");
+                if (breakdownXML != null)
+                    out.print(breakdownXML.getPdm());
+                out.print(";");
+                if (DEBUG)
+                    System.out.println("Write PDO");
+                if (breakdownXML != null)
+                    out.print(breakdownXML.getPdo());
                 out.print('\n');
                 out.flush();
             }
@@ -80,5 +104,45 @@ public class DiagnosticFileDecoder {
         {
             e.getStackTrace();
         }
+    }
+    public static BreakdownXML getCodeDescription(String code)
+    {
+        if (DEBUG)
+            System.out.println("Getting description for the code: " + code);
+        try
+        {
+            DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            // load the document
+            Document doc = documentBuilder.parse("Resource.xml");
+            // obtenir les elements a partir du fichier XML qui represent les pannes
+            NodeList items = doc.getElementsByTagName("item");
+            // iterate through all the breakdown elements searching for a match
+            for(int i = 0; i < items.getLength(); ++i) {
+                Node item = items.item(i);
+                // get the item code
+                String itemCode = item.getAttributes().item(0).getTextContent().substring(2);
+                // checking for the match
+                if (itemCode.equals(code)) {
+                    if (DEBUG)
+                        System.out.println("Code found");
+                    BreakdownXML breakdownXML = new BreakdownXML();
+                    //---------------Set the breakdownXML object that represent the breakdown infos----------------
+                    breakdownXML.setCode(code);
+                    breakdownXML.setDevice(item.getParentNode().getNodeName());
+                    breakdownXML.setDescription(item.getChildNodes().item(1).getTextContent().strip());
+                    breakdownXML.setPdm(item.getChildNodes().item(2).getTextContent().strip());
+                    breakdownXML.setPdo(item.getChildNodes().item(3).getTextContent().strip());
+                    //---------------------------------------------------------------------------------------------
+                    return breakdownXML;
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+        if (DEBUG)
+            System.out.println("Code not found");
+        return null;
     }
 }
