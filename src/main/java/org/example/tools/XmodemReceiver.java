@@ -40,7 +40,7 @@ public class XmodemReceiver {
         if (!port.isOpen())
             port.openPort();
 
-        port.readBytes(new byte[999], 999);
+        //port.readBytes(new byte[999], 999);
         // init the transaction
         if (DEBUG)
             System.out.println("[Xmodem receiver] init the transaction");
@@ -59,9 +59,12 @@ public class XmodemReceiver {
                     if (DEBUG)
                         System.out.println("Attempts so far: " + attemptCount);
                     port.writeBytes(new byte[]{'C'}, 1);
-                    Thread.sleep(500);
                     int nbr = port.readBytes(packetData, CNC_XMODEM_PACKET_LENGTH);
-                    System.out.println(nbr);
+                    if (DEBUG)
+                    {
+                        System.out.println("Number of bytes: " + nbr);
+                        System.out.println("is the header right: " + (packetData[0] == SOH));
+                    }
                     ++attemptCount;
                 }
                 if (attemptCount >= INIT_MAX_ATTEMPTS)
@@ -90,8 +93,8 @@ public class XmodemReceiver {
                 }
             }
             byte[] payload = Arrays.copyOfRange(packetData, 3, 3 + PAYLOAD_LENGTH);
-            if (DEBUG)
-                System.out.println(new String(payload));
+//            if (DEBUG)
+//                System.out.println(new String(payload));
 
             // get the checksum from the packet
             int packetCNC = packetData[CNC_XMODEM_PACKET_LENGTH - 2] & 0xff;
@@ -115,11 +118,89 @@ public class XmodemReceiver {
                 ++blockNumber;
             } else
                 port.writeBytes(new byte[]{NAK}, 1);
-            Thread.sleep(1000);
         }
         if (DEBUG)
             System.out.println("return");
         return new File(filename);
+    }
+    static public void receiveV2(SerialPort port, String output) throws IOException {
+        int blockNumber = 1;
+        int errorCount = 0;
+        boolean endOfTransmission = false;
+        boolean initPhase = true;
+        byte[] packet = new byte[CNC_XMODEM_PACKET_LENGTH];
+        byte[] payload = null;
+        OutputStream outputStream = new FileOutputStream(output);
+        while (!endOfTransmission && errorCount < 10)
+        {
+            boolean errorFound = false;
+            if (initPhase)
+            {
+                port.writeBytes(new byte[]{'C'}, 1);
+            }
+            if (DEBUG) {
+                System.out.println("+ Receiving the packet number: " + blockNumber);
+                System.out.println("Initialise phase: " + initPhase);
+                System.out.println("Error count: " + errorCount);
+            }
+            int nbr = port.readBytes(packet, CNC_XMODEM_PACKET_LENGTH);
+            if (nbr > 0)
+                initPhase = false;
+            if (DEBUG)
+                System.out.println("Packet length: " + nbr);
+            if (packet[0] == EOT) {
+                endOfTransmission = true;
+                if (DEBUG)
+                    System.out.println("End of transmission");
+            }
+            else
+            {
+                if ((packet[0] & 0xff) != SOH) {
+                    if (DEBUG)
+                        System.out.println("Wrong header: " + packet[0] + " ref: " + SOH);
+                    errorFound = true;
+                }
+                if (!errorFound) {
+
+                    payload = Arrays.copyOfRange(packet, 3, 3 + PAYLOAD_LENGTH);
+                    int packetCNC = packet[CNC_XMODEM_PACKET_LENGTH - 2] & 0xff;
+
+                    packetCNC = (packetCNC << 8) + (packet[CNC_XMODEM_PACKET_LENGTH - 1] & 0xff);
+
+                    int calculatedCNC = (int) CRC.calculate(CRC.CRC16_CCITT_XModem, payload);
+
+                    if (DEBUG) {
+                        System.out.println("Packet CNC: " + packetCNC);
+                        System.out.println("Calculated CNC: " + calculatedCNC);
+                    }
+
+                    if (calculatedCNC != packetCNC) {
+                        errorFound = true;
+                    }
+                }
+                if (!errorFound) {
+                    if (DEBUG)
+                        System.out.println("Write data out to the file");
+                    // if we reached the end of transfer we check for padding
+                    int endByteIndex = 0;
+                    for (; (endByteIndex < payload.length) && (payload[endByteIndex] != SUB); ++endByteIndex) ;
+                    outputStream.write(payload, 0, endByteIndex);
+                }
+            }
+            if (errorFound) {
+                ++errorCount;
+                if (DEBUG)
+                    System.out.println("NAK");
+                port.writeBytes(new byte[]{NAK}, 1);
+            }
+            else {
+                errorCount = 0;
+                ++blockNumber;
+                if (DEBUG)
+                    System.out.println("ACK");
+                port.writeBytes(new byte[]{ACK}, 1);
+            }
+        }
     }
     static private int calculateChecksum(byte[] payload)
     {

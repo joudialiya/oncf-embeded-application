@@ -9,13 +9,13 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.io.Writer;
 
 /* this class recreate the function of taf view, it provides a static method that
 takes the encoded file and decode it into csv file */
 public class DiagnosticFileDecoder {
     private static final boolean DEBUG = true;
-    public String ResourcePath = null;
+    public String resourcePath = null;
+    private Document resourceDoc = null;
     public void decode(String filename, String outputFilename)
     {
         try {
@@ -123,17 +123,18 @@ public class DiagnosticFileDecoder {
             out.print(breakdownXML.getPdo());
         out.print('\n');
     }
-    public  BreakdownXML getCodeDescription(String code)
-    {
-        if (DEBUG)
-            System.out.println("Getting description for the code: " + code);
+    public  BreakdownXML getCodeDescription(String code) throws Exception {
         try
         {
-            DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            // load the document
-            Document doc = documentBuilder.parse("Resource.xml");
+            if (DEBUG)
+                System.out.println("Getting description for the code: " + code);
+            if (resourceDoc == null) {
+                DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+                // load the document
+                resourceDoc = documentBuilder.parse("Resource.xml");
+            }
             // obtenir les elements a partir du fichier XML qui represent les pannes
-            NodeList items = doc.getElementsByTagName("item");
+            NodeList items = resourceDoc.getElementsByTagName("item");
             // iterate through all the breakdown elements searching for a match
             for(int i = 0; i < items.getLength(); ++i) {
                 Node item = items.item(i);
