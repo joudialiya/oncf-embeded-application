@@ -53,6 +53,7 @@ localhost:8082
 127.0.0.1:8082
 ```
 ![img_1.png](img_1.png)
+
 Et c'est là ou vous pouvez interroger la table Events Messages Association pour voir que les donnees sont bien sauvegardées.
 
 # Build with Maven
