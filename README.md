@@ -38,7 +38,7 @@ Et Pour que vous pouvez effectuer quelque test unitaire ainsi que le test de la 
 # Plus d'informations sur le test du premier version du program:
 Quesqu’il fait ?
 - Recevoir  les messages de la connection serial
-- Extraire les information des événements/pannes
+- Extraire les informations des événements/pannes
 - Sauvegarder les informations dans la base de données
 
 vous exécutez le programme et voyez dans la base de données que les données sont effectivement sauvgardees.
