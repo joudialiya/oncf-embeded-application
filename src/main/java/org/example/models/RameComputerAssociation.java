@@ -6,9 +6,9 @@ import org.hibernate.annotations.Check;
 
 @Data
 @Entity
-@Check(constraints = "placement in ('M', 'MH')")
 public class RameComputerAssociation {
     @Id
+    @GeneratedValue
     private int id;
     @ManyToOne
     @JoinColumn(name = "idComputer")

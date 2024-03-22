@@ -169,180 +169,209 @@
     <schema id="162" parent="2" name="INFORMATION_SCHEMA"/>
     <schema id="163" parent="2" name="PUBLIC">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-03-03.11:04:50</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-03-21.20:40:40</LastIntrospectionLocalTimestamp>
     </schema>
-    <table id="164" parent="163" name="BREAKDOWNEVENTSASSOCIATION"/>
-    <table id="165" parent="163" name="BREAKDOWNINFOS"/>
-    <table id="166" parent="163" name="COMPUTER"/>
-    <table id="167" parent="163" name="RAME"/>
-    <table id="168" parent="163" name="RAMECOMPUTERASSOCIATION"/>
-    <column id="169" parent="164" name="ID">
+    <sequence id="164" parent="163" name="BREAKDOWNEVENTSASSOCIATION_SEQ">
+      <DasType>BIGINT|0s</DasType>
+      <SequenceIdentity>1(1)+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+    </sequence>
+    <sequence id="165" parent="163" name="BREAKDOWNINFOS_SEQ">
+      <DasType>BIGINT|0s</DasType>
+      <SequenceIdentity>1(1)+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+    </sequence>
+    <sequence id="166" parent="163" name="COMPUTER_SEQ">
+      <DasType>BIGINT|0s</DasType>
+      <SequenceIdentity>1(1)+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+    </sequence>
+    <sequence id="167" parent="163" name="RAMECOMPUTERASSOCIATION_SEQ">
+      <DasType>BIGINT|0s</DasType>
+      <SequenceIdentity>1(1)+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+    </sequence>
+    <sequence id="168" parent="163" name="RAME_SEQ">
+      <DasType>BIGINT|0s</DasType>
+      <SequenceIdentity>1(1)+50</SequenceIdentity>
+      <StartValue>1</StartValue>
+    </sequence>
+    <table id="169" parent="163" name="BREAKDOWNEVENTSASSOCIATION"/>
+    <table id="170" parent="163" name="BREAKDOWNINFOS"/>
+    <table id="171" parent="163" name="COMPUTER"/>
+    <table id="172" parent="163" name="RAME"/>
+    <table id="173" parent="163" name="RAMECOMPUTERASSOCIATION"/>
+    <column id="174" parent="169" name="ID">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="170" parent="164" name="IDBREAKDOWN">
+    <column id="175" parent="169" name="IDBREAKDOWN">
       <DasType>INTEGER|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="171" parent="164" name="IDRAME">
+    <column id="176" parent="169" name="IDRAME">
       <DasType>INTEGER|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="172" parent="164" name="TENSION">
+    <column id="177" parent="169" name="TENSION">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="173" parent="164" name="VELOCITY">
+    <column id="178" parent="169" name="VELOCITY">
       <DasType>REAL|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="174" parent="164" name="DATE">
+    <column id="179" parent="169" name="DATE">
       <DasType>TIMESTAMP|0s</DasType>
       <Position>6</Position>
     </column>
-    <foreign-key id="175" parent="164" name="FKL3S2X49RRCJ60PKFN4Y1SCUN6">
+    <foreign-key id="180" parent="169" name="FKL3S2X49RRCJ60PKFN4Y1SCUN6">
       <ColNames>IDBREAKDOWN</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyName>CONSTRAINT_7</RefKeyName>
       <RefTableName>BREAKDOWNINFOS</RefTableName>
     </foreign-key>
-    <foreign-key id="176" parent="164" name="FK652OXWS8G0SBNBOUGHQ1RHCSV">
+    <foreign-key id="181" parent="169" name="FK652OXWS8G0SBNBOUGHQ1RHCSV">
       <ColNames>IDRAME</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyName>CONSTRAINT_2</RefKeyName>
       <RefTableName>RAME</RefTableName>
     </foreign-key>
-    <index id="177" parent="164" name="PRIMARY_KEY_6">
+    <index id="182" parent="169" name="PRIMARY_KEY_6">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="178" parent="164" name="FKL3S2X49RRCJ60PKFN4Y1SCUN6_INDEX_6">
+    <index id="183" parent="169" name="FKL3S2X49RRCJ60PKFN4Y1SCUN6_INDEX_6">
       <ColNames>IDBREAKDOWN</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <index id="179" parent="164" name="FK652OXWS8G0SBNBOUGHQ1RHCSV_INDEX_6">
+    <index id="184" parent="169" name="FK652OXWS8G0SBNBOUGHQ1RHCSV_INDEX_6">
       <ColNames>IDRAME</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <key id="180" parent="164" name="CONSTRAINT_6">
+    <key id="185" parent="169" name="CONSTRAINT_6">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="181" parent="165" name="ID">
+    <column id="186" parent="170" name="ID">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="182" parent="165" name="CODE">
+    <column id="187" parent="170" name="CODE">
       <DasType>CHARACTER VARYING(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="183" parent="165" name="DESIGNATION">
+    <column id="188" parent="170" name="DESIGNATION">
       <DasType>CHARACTER VARYING(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <index id="184" parent="165" name="PRIMARY_KEY_7">
+    <index id="189" parent="170" name="PRIMARY_KEY_7">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="185" parent="165" name="CONSTRAINT_7">
+    <key id="190" parent="170" name="CONSTRAINT_7">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="186" parent="166" name="ID">
+    <column id="191" parent="171" name="ID">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="187" parent="166" name="IPADDRESS">
+    <column id="192" parent="171" name="IPADDRESS">
       <DasType>CHARACTER VARYING(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="188" parent="166" name="PRIMARY_KEY_A">
+    <index id="193" parent="171" name="PRIMARY_KEY_A">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="189" parent="166" name="CONSTRAINT_A">
+    <key id="194" parent="171" name="CONSTRAINT_A">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="190" parent="167" name="ID">
+    <column id="195" parent="172" name="ID">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="191" parent="167" name="NAME">
+    <column id="196" parent="172" name="NAME">
       <DasType>CHARACTER VARYING(255)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="192" parent="167" name="PRIMARY_KEY_2">
+    <index id="197" parent="172" name="PRIMARY_KEY_2">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="193" parent="167" name="CONSTRAINT_2">
+    <key id="198" parent="172" name="CONSTRAINT_2">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="194" parent="168" name="ID">
+    <column id="199" parent="173" name="ID">
       <DasType>INTEGER|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="195" parent="168" name="IDCOMPUTER">
+    <column id="200" parent="173" name="IDCOMPUTER">
       <DasType>INTEGER|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="196" parent="168" name="IDRAME">
+    <column id="201" parent="173" name="IDRAME">
       <DasType>INTEGER|0s</DasType>
       <Position>3</Position>
     </column>
-    <foreign-key id="197" parent="168" name="FKFJUSGAAFWWSWASDI24HS5KTD0">
+    <column id="202" parent="173" name="PLACEMENT">
+      <DasType>CHARACTER VARYING(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="203" parent="173" name="FKFJUSGAAFWWSWASDI24HS5KTD0">
       <ColNames>IDCOMPUTER</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyName>CONSTRAINT_A</RefKeyName>
       <RefTableName>COMPUTER</RefTableName>
     </foreign-key>
-    <foreign-key id="198" parent="168" name="FKJKK3IG35UBIAA5IQRSOQ6K84C">
+    <foreign-key id="204" parent="173" name="FKJKK3IG35UBIAA5IQRSOQ6K84C">
       <ColNames>IDRAME</ColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
       <RefKeyName>CONSTRAINT_2</RefKeyName>
       <RefTableName>RAME</RefTableName>
     </foreign-key>
-    <index id="199" parent="168" name="PRIMARY_KEY_8">
+    <index id="205" parent="173" name="PRIMARY_KEY_8">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="200" parent="168" name="CONSTRAINT_INDEX_8">
+    <index id="206" parent="173" name="CONSTRAINT_INDEX_8">
       <ColNames>IDRAME</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="201" parent="168" name="FKFJUSGAAFWWSWASDI24HS5KTD0_INDEX_8">
+    <index id="207" parent="173" name="FKFJUSGAAFWWSWASDI24HS5KTD0_INDEX_8">
       <ColNames>IDCOMPUTER</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </index>
-    <key id="202" parent="168" name="CONSTRAINT_8F">
+    <key id="208" parent="173" name="CONSTRAINT_8F">
       <ColNames>ID</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="203" parent="168" name="CONSTRAINT_8">
+    <key id="209" parent="173" name="CONSTRAINT_8">
       <ColNames>IDRAME</ColNames>
       <NameSurrogate>1</NameSurrogate>
     </key>

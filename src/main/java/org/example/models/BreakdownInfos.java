@@ -1,6 +1,7 @@
 package org.example.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
 
@@ -9,7 +10,9 @@ import lombok.Data;
 
 public class BreakdownInfos {
     @Id
+    @GeneratedValue
     int id;
     String Code;
-    String Designation;
+    String Description;
+    String Device;
 }

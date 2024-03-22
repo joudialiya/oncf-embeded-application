@@ -15,5 +15,6 @@
         <mapping class="org.example.models.BreakdownInfos"/>
         <mapping class="org.example.models.BreakdownEventsAssociation"/>
         <mapping class="org.example.models.RameComputerAssociation"/>
+        <mapping class="org.example.models.EventsMessagesAssociation"/>
     </session-factory>
 </hibernate-configuration>

@@ -1,4 +1,6 @@
 import com.fazecast.jSerialComm.SerialPort;
+import org.example.MessagesListener;
+import org.example.MessagesParser;
 import org.example.tools.BreakdownXML;
 import org.example.tools.DiagnosticFileDecoder;
 import org.example.tools.XmodemReceiver;
@@ -12,32 +14,13 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TestClass {
     @Test
-    public void inputStreamPort()
-    {
-        var com3 = SerialPort.getCommPort("COM3");
-        var com4 = SerialPort.getCommPort("COM4");
-        com3.openPort();
-        com4.openPort();
-        com4.setComPortTimeouts(SerialPort.TIMEOUT_READ_SEMI_BLOCKING, 5000, 2);
-        try {
-            Thread.sleep(150);
-            System.out.println(com4.readBytes(new byte[3], 3));
-
-        }catch (Exception e) {
-            e.getStackTrace();
-        }
-
-    }
-    @Test
+    // test de la reception d'un fichier via Xmodem CRC la version 1
     public void testXmodemReceiverCNCVersion() throws IOException, InterruptedException {
         var com4 = SerialPort.getCommPort("COM4");
         com4.setComPortTimeouts(SerialPort.TIMEOUT_READ_BLOCKING, 10000, 0);
@@ -45,6 +28,7 @@ public class TestClass {
         XmodemReceiver.receive(com4, "out.txt");
     }
     @Test
+    // test de la reception d'un fichier via Xmodem CRC la version 2
     public void testXmodemReceiverCNCVersionV2() throws IOException, InterruptedException {
         var com4 = SerialPort.getCommPort("COM4");
         com4.setComPortTimeouts(SerialPort.TIMEOUT_READ_BLOCKING, 10000, 0);
@@ -52,6 +36,7 @@ public class TestClass {
         XmodemReceiver.receiveV2(com4, "out.txt");
     }
     @Test
+    // test du transcodage du releve du CCU
     public void testDecoding()
     {
         DiagnosticFileDecoder diagnosticFileDecoder = new DiagnosticFileDecoder();
@@ -59,20 +44,7 @@ public class TestClass {
         diagnosticFileDecoder.decode("output", "out.csv");
     }
     @Test
-    public void loadXMLDocument() throws ParserConfigurationException, IOException, SAXException {
-        DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-        Document doc = documentBuilder.parse("Resource.xml");
-        NodeList items = doc.getElementsByTagName("item");
-        for(int i = 0; i < items.getLength(); ++i)
-        {
-            Node item = items.item(i);
-            System.out.println(item.getAttributes().item(0).getTextContent().substring(2));
-            System.out.print(item.getChildNodes().item(1).getTextContent());
-            System.out.print(" - ");
-            System.out.println(item.getParentNode().getNodeName());
-        }
-    }
-    @Test
+    // test de l'extration des infos lie a un code d'evenement
     public void testGetCodeDescription() throws Exception {
         DiagnosticFileDecoder diagnosticFileDecoder = new DiagnosticFileDecoder();
         diagnosticFileDecoder.resourcePath = "Resource.xml";
@@ -80,6 +52,7 @@ public class TestClass {
         System.out.println(breakdown.getDescription() + ";" + breakdown.getPdo().length() + ";" +breakdown.getPdm());
     }
     @Test
+    // test de l'expretion regulier qui va capturer les infos
     public void testRegEx() throws IOException {
         InputStream inputStream = new FileInputStream("breakdown.txt");
 
@@ -90,5 +63,6 @@ public class TestClass {
             System.out.println(matcher.group(0));
         }
     }
+
 }
 

@@ -1,0 +1,522 @@
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:20c6
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:20c7
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:209a
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:20d4
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:20d2
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:209a
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:209a
+
+???
+
+STA/CCUM:3>help
+???
+
+STA/CCUM:3>scad
+*** Predisporre il protocollo XMODEM in ricezione
+ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿí©*** NACK
+
+STA/CCUM:3>MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:55
+
+
+
+############################################
+#                                          #
+#  ###  #   #  ####  ###  #    ####   ###  #
+# #   # ##  # #     #   # #    #   # #   # #
+# ##### # # #  ###  ##### #    #   # #   # #
+# #   # #  ##     # #   # #    #   # #   # #
+# #   # #   # ####  #   # #### ####   ###  #
+#                                          #
+############################################
+      A N S A L D O B R E D A       S. P. A.
+
+
+DEV booting...
+RTC started
+MDV init ok
+
+--- Shell --- Type '?' for help
+
+STA/CCUS:10>?
+
+<CTRL>+<C> : clear line; <CTRL>+<V> : history up; <CTRL>+<B> : history down
+
+ver  :: Print the version string
+rom_crc  :: Print the CRC of the ROM
+t  :: Show target info
+reset  :: Reset the board
+nmi  :: Send a Non-Maskable Interrupt
+reboot <addr> :: Reboot to addr
+resetrom  :: Reset to ROM
+bootload  :: Start the bootstrap loader
+dm [<addr> [<size>]] :: Dump a memory region
+sm <addr> <data..> :: Set a memory region
+crc16 <addr> <len> :: Calculate the CRC-16 of a memory region
+cpu  :: Measure the CPU usage
+flash_check <base> :: Check that there is a FLASH at that address
+flash_sector_erase <base> <sector num> :: Erase a FLASH sector
+flash_write <base> <offset> <data..> :: Write data to a FLASH
+m  :: Dump the MVBC status
+pp <num> :: Display a phisical port
+da <num> :: Display a device address data
+la <num> :: Display a logical address data
+mf [<mask> <value>] :: Master frame intercept
+mas [<value>] :: Show/set the master frame enable flag
+bt [<line>] [<master frame> [<cnt> [*|<isr0_msk> [*|<pcs1_msk>]]]] :: Bus test
+ds [<num>] :: Dump a dataset
+pv <name> :: Dump a process variable
+fc [<name> [<data>]] :: Force/unforce a/all process variable/s
+fc_ds <num> [*] :: Force all the process variables in a dataset
+s  :: JDP software status
+mts [<value>] :: Show/set the msg trace enable flags (1:pkt 2:tmo)
+sf <num> [*] :: Subscribe a function
+msg *|<veh> <fct> *|<sta> *|<topo> <snd_fct> <msg..> :: Send a message
+read_inventory [<veh>] <sta> :: read the inventory of the specified station
+vver  :: read the inventory of all the vehicle
+rsh [<veh>] <sta> <command> :: Execute a command on a remote shell
+ncdb <id> :: Dump an NCDB object
+ncdb_open  :: Open the extern NCDB (erases it)
+ncdb_write <id> <data..> :: Write an object in the extern NCDB
+ncdb_close  :: Close the extern NCDB
+ncdb_upload  :: Upload the extern NCDB using XMODEM-CRC
+tnm_read_mem <veh> <sta> <addr> <len> :: Read Memory test
+nadi  :: Print the NADI
+nadi_dyn <number> [<value>] :: Change a NADI dynamic attribute
+var [<var>] :: display var list
+addvar name addr. type :: add run-time vars
+query [enable] :: enable/disable query
+rid <null> :: stampa le variabili di ridondanza
+scad <null> :: scarico dati
+? [<command>] :: Help
+
+STA/CCUS:10>new_memo ccus = 0xDE0F
+
+
+<CTRL>+<C> : clear line; <CTRL>+<V> : history up; <CTRL>+<B> : history down
+
+ver  :: Print the version string
+rom_crc  :: Print the CRC of the ROM
+t  :: Show target info
+reset  :: Reset the board
+nmi  :: Send a Non-Maskable Interrupt
+reboot <addr> :: Reboot to addr
+resetrom  :: Reset to ROM
+bootload  :: Start the bootstrap loader
+dm [<addr> [<size>]] :: Dump a memory region
+sm <addr> <data..> :: Set a memory region
+crc16 <addr> <len> :: Calculate the CRC-16 of a memory region
+cpu  :: Measure the CPU usage
+flash_check <base> :: Check that there is a FLASH at that address
+flash_sector_erase <base> <sector num> :: Erase a FLASH sector
+flash_write <base> <offset> <data..> :: Write data to a FLASH
+m  :: Dump the MVBC status
+pp <num> :: Display a phisical port
+da <num> :: Display a device address data
+la <num> :: Display a logical address data
+mf [<mask> <value>] :: Master frame intercept
+mas [<value>] :: Show/set the master frame enable flag
+bt [<line>] [<master frame> [<cnt> [*|<isr0_msk> [*|<pcs1_msk>]]]] :: Bus test
+ds [<num>] :: Dump a dataset
+pv <name> :: Dump a process variable
+fc [<name> [<data>]] :: Force/unforce a/all process variable/s
+fc_ds <num> [*] :: Force all the process variables in a dataset
+s  :: JDP software status
+mts [<value>] :: Show/set the msg trace enable flags (1:pkt 2:tmo)
+sf <num> [*] :: Subscribe a function
+msg *|<veh> <fct> *|<sta> *|<topo> <snd_fct> <msg..> :: Send a message
+read_inventory [<veh>] <sta> :: read the inventory of the specified station
+vver  :: read the inventory of all the vehicle
+rsh [<veh>] <sta> <command> :: Execute a command on a remote shell
+ncdb <id> :: Dump an NCDB object
+ncdb_open  :: Open the extern NCDB (erases it)
+ncdb_write <id> <data..> :: Write an object in the extern NCDB
+ncdb_close  :: Close the extern NCDB
+ncdb_upload  :: Upload the extern NCDB using XMODEM-CRC
+tnm_read_mem <veh> <sta> <addr> <len> :: Read Memory test
+nadi  :: Print the NADI
+nadi_dyn <number> [<value>] :: Change a NADI dynamic attribute
+var [<var>] :: display var list
+addvar name addr. type :: add run-time vars
+query [enable] :: enable/disable query
+rid <null> :: stampa le variabili di ridondanza
+scad <null> :: scarico dati
+? [<command>] :: Help
+
+STA/CCUS:10>
+
+<CTRL>+<C> : clear line; <CTRL>+<V> : history up; <CTRL>+<B> : history down
+
+ver  :: Print the version string
+rom_crc  :: Print the CRC of the ROM
+t  :: Show target info
+reset  :: Reset the board
+nmi  :: Send a Non-Maskable Interrupt
+reboot <addr> :: Reboot to addr
+resetrom  :: Reset to ROM
+bootload  :: Start the bootstrap loader
+dm [<addr> [<size>]] :: Dump a memory region
+sm <addr> <data..> :: Set a memory region
+crc16 <addr> <len> :: Calculate the CRC-16 of a memory region
+cpu  :: Measure the CPU usage
+flash_check <base> :: Check that there is a FLASH at that address
+flash_sector_erase <base> <sector num> :: Erase a FLASH sector
+flash_write <base> <offset> <data..> :: Write data to a FLASH
+m  :: Dump the MVBC status
+pp <num> :: Display a phisical port
+da <num> :: Display a device address data
+la <num> :: Display a logical address data
+mf [<mask> <value>] :: Master frame intercept
+mas [<value>] :: Show/set the master frame enable flag
+bt [<line>] [<master frame> [<cnt> [*|<isr0_msk> [*|<pcs1_msk>]]]] :: Bus test
+ds [<num>] :: Dump a dataset
+pv <name> :: Dump a process variable
+fc [<name> [<data>]] :: Force/unforce a/all process variable/s
+
+???
+
+STA/CCUM:3>?
+
+<CTRL>+<C> : clear line; <CTRL>+<V> : history up; <CTRL>+<B> : history down
+
+ver  :: Print the version string
+rom_crc  :: Print the CRC of the ROM
+t  :: Show target info
+reset  :: Reset the board
+nmi  :: Send a Non-Maskable Interrupt
+reboot <addr> :: Reboot to addr
+resetrom  :: Reset to ROM
+bootload  :: Start the bootstrap loader
+dm [<addr> [<size>]] :: Dump a memory region
+sm <addr> <data..> :: Set a memory region
+crc16 <addr> <len> :: Calculate the CRC-16 of a memory region
+cpu  :: Measure the CPU usage
+flash_check <base> :: Check that there is a FLASH at that address
+flash_sector_erase <base> <sector num> :: Erase a FLASH sector
+flash_write <base> <offset> <data..> :: Write data to a FLASH
+m  :: Dump the MVBC status
+pp <num> :: Display a phisical port
+da <num> :: Display a device address data
+la <num> :: Display a logical address data
+mf [<mask> <value>] :: Master frame intercept
+mas [<value>] :: Show/set the master frame enable flag
+bt [<line>] [<master frame> [<cnt> [*|<isr0_msk> [*|<pcs1_msk>]]]] :: Bus test
+ds [<num>] :: Dump a dataset
+pv <name> :: Dump a process variable
+fc [<name> [<data>]] :: Force/unforce a/all process variable/s
+fc_ds <num> [*] :: Force all the process variables in a dataset
+s  :: JDP software status
+mts [<value>] :: Show/set the msg trace enable flags (1:pkt 2:tmo)
+sf <num> [*] :: Subscribe a function
+msg *|<veh> <fct> *|<sta> *|<topo> <snd_fct> <msg..> :: Send a message
+read_inventory [<veh>] <sta> :: read the inventory of the specified station
+vver  :: read the inventory of all the vehicle
+rsh [<veh>] <sta> <command> :: Execute a command on a remote shell
+ncdb <id> :: Dump an NCDB object
+ncdb_open  :: Open the extern NCDB (erases it)
+ncdb_write <id> <data..> :: Write an object in the extern NCDB
+ncdb_close  :: Close the extern NCDB
+ncdb_upload  :: Upload the extern NCDB using XMODEM-CRC
+tnm_read_mem <veh> <sta> <addr> <len> :: Read Memory test
+nadi  :: Print the NADI
+nadi_dyn <number> [<value>] :: Change a NADI dynamic attribute
+var [<var>] :: display var list
+addvar name addr. type :: add run-time vars
+query [enable] :: enable/disable query
+rid <null> :: stampa le variabili di ridondanza
+scad <null> :: scarico dati
+login <user><password> :: abilita utente per comandi protetti
+logout  :: disabilita utente per comandi protetti
+train_setup <owner> <num> <tipo>  :: scrive in MDV i parametri owner,num,tipo_ta
+f e carica il <dbcod>
+reset_dbsc  :: reset database eventi locale
+eurc  ::
+trace <n° trace> :: Abilitazione trace
+macro_md_test <num> :: Testa macro MD scelta o tutte
+macro_ms_test <num> :: Testa macro MS scelta o tutte
+st <num> :: send della topografia
+alrloc <codice_di_guasto> <numero_di_messaggi> :: Informazione di guasto da LOGI
+CA
+vt_stato  :: Stato dei monitors MS e MD
+mdv_abil  :: Abilita la MDV per il write
+to_dia  :: Messaggio in codice a diagnostica
+dia <expand> ::
+dualport_dump <offset>  :: Dualport dump (da offset se dato)
+md  :: Tasto in remoto a VT Diagnostico
+ms  :: Tasto in remoto a VT Strumenti
+db_set  :: Db_prehaeder
+test_ramstatica  ::
+force_pv_carichi  ::
+set_macro 0/1 :: Setta lo stato true/false delle macro
+init_macro_strumenti  ::
+init_macro_diagnostico  ::
+release Release sw ::
+reset_macro_strumenti  ::
+reset_macro_diagnostico  ::
+dump_avarie  ::
+show_slot <num> ::
+ins_av <plant><cab><cod> ::
+monitor  ::
+presenta  ::
+ftab <onoff> ::
+passwd <new> :: show/set maintenance password
+edp <num> :: abilita la DPR a scrivere su i DS (1/0)
+nap <null> :: stampa il la struct del Nadi
+pnt <null> :: stampa i parametri del ntw
+key <null> :: modifica la chiave di banco (1/0)
+veisel  :: stampa il semitreno selezionato
+pdeb  :: esegue stampe per debugger
+? [<command>] :: Help
+
+STA/CCUM:3>t
+
+*** PIL status ***
+PIL ticks since startup : 0xD7DF (0:09:12.63)
+PIL system pool use     : 0x8FD6
+
+*** RTX-166 status ***
+RTX-166 heap use        : 0x35DE
+RTX-166 heap use far    : 0x71C
+
+STA/CCUM:3>passwd
+PASSWORD IN USO 4750
+STA/CCUM:3>to_dia
+???
+
+STA/CCUM:3>dia
+
+PTR WR          19424
+PTR RD              0
+TIMEDATE48 1710245477
+ALTRA OK     1
+ALTRA attiva 0
+CCU OK       1
+LOGICA  OK   1
+SEL1     1
+SEL2     1
+OLDSEL1  1
+OLDSEL2  1
+LV_STATO 3800
+Ridondanza disponibile
+master_test_fep 208
+
+STA/CCUM:3>monitor
+TITPO TAF (1/2)                      1
+FNME /FS  (1==FNME/0)                0
+STATO RETE(2=IN CORS0 /3=DEFINITA    3
+NTW ABIL                             1
+CCU ATTIVA (1/0)                     1
+SUNTO                                03
+CONV1                                f021
+CONV2                                00
+
+STA/CCUM:3>
+TITPO TAF (1/2)                      1
+FNME /FS  (1==FNME/0)                0
+STATO RETE(2=IN CORS0 /3=DEFINITA    3
+NTW ABIL                             1
+CCU ATTIVA (1/0)                     1
+SUNTO                                03
+CONV1                                f021
+CONV2                                00
+
+STA/CCUM:3>
+TITPO TAF (1/2)                      1
+FNME /FS  (1==FNME/0)                0
+STATO RETE(2=IN CORS0 /3=DEFINITA    3
+NTW ABIL                             1
+CCU ATTIVA (1/0)                     1
+SUNTO                                03
+CONV1                                f021
+CONV2                                00
+
+STA/CCUM:3>logout
+
+STA/CCUM:3>;
+???
+
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:4   code:20bf
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:1   code:209a
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:8
+         tipo:aa
+DA CCU TIPO aa
+ START AV  plant:1   uic:4   code:2004
+MD APPL:  len:8
+         tipo:55
+DA CCU TIPO 55
+MD APPL:  len:8
+         tipo:55
+DA CCU TIPO 55
+MD APPL:  len:8
+         tipo:55
+DA CCU TIPO 55
+MD APPL:  len:8
+         tipo:55
+DA CCU TIPO 55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:8
+         tipo:aa
+DA CCU TIPO aa
+MD APPL:  len:8
+         tipo:aa
+DA CCU TIPO aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:8
+         tipo:aa
+DA CCU TIPO aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:1   code:2076
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:1   code:2075
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:2
+         tipo:aa
+ START AV  plant:1   uic:1   code:20ca
+MD APPL:  len:2
+         tipo:55
+MD APPL:  len:12
+         tipo:0
+    code in: a0  0  1  48  0  0  0  aa  34  32  30  31
+     codice:a00c(-24564)
+ START AV  plant:3   uic:1   code:a00c
+MD APPL:  len:12
+         tipo:0
+    code in: a0  0  1  48  0  0  0  55  34  32  30  31
+     codice:a00c(-24564)
+END_AV da rot 1
+MD APPL:  len:12
+         tipo:0
+    code in: a0  0  1  52  0  0  0  55  35  32  31  39
+     codice:0(0)
+MD APPL:  len:12
+         tipo:0
+    code in: a0  0  1  52  0  0  0  55  35  31  31  39
+     codice:0(0)
+ OFFSET 258c
+ IND_M2 184e  IND_M3 0000
+ OFFSET 2726
+ IND_M2 1aec  IND_M3 0000
+ OFFSET 2726
+ IND_M2 1a1a  IND_M3 0000
+ OFFSET 1b50
+ IND_M2 17b8  IND_M3 0000
+ OFFSET 2726
+ IND_M2 1a56  IND_M3 0000
+ OFFSET 1b50
+ IND_M2 17b8  IND_M3 0000
+set bench a 0
+NTW-> 2
+
+NADI chg state
+RESTART MMI
+NADI UPDATED
+
+NTW-> 1
+
+R1.chk 0
+NTW-> 4
+
+CODA SATURA 2
+
+PARK-> 3
+
+ OFFSET 258c
+ IND_M2 184e  IND_M3 0000
+ OFFSET 2726
+ IND_M2 1aec  IND_M3 0000
+ OFFSET 2726
+ IND_M2 1a1a  IND_M3 0000
+ OFFSET 1b50
+ IND_M2 17b8  IND_M3 0000
+ OFFSET 2726
+ IND_M2 1a56  IND_M3 0000
+ OFFSET 1b50
+ IND_M2 17b8  IND_M3 0000
+LOC PTR READ 13823104
+ OFFSET 2726
+ IND_M2 1a38  IND_M3 0000

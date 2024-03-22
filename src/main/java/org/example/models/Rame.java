@@ -1,9 +1,6 @@
 package org.example.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -11,6 +8,7 @@ import lombok.Data;
 
 public class Rame {
     @Id
+    @GeneratedValue
     private int id;
     private String name;
     @OneToOne(mappedBy = "rame", fetch = FetchType.EAGER)

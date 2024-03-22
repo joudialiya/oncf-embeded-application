@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-public class BreakdownEventsAssociation {
+public class EventsMessagesAssociation {
     @Id
     @GeneratedValue
     int id;
@@ -18,6 +18,4 @@ public class BreakdownEventsAssociation {
     @JoinColumn(name = "idBreakdown")
     BreakdownInfos breakdownInfos;
     LocalDateTime date;
-    float velocity;
-    int tension;
 }

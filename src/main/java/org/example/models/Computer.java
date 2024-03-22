@@ -8,6 +8,7 @@ import java.util.List;
 @Entity
 public class Computer {
     @Id
+    @GeneratedValue
     int id;
     String ipAddress = "0.0.0.0";
     @OneToMany(mappedBy = "computer")
