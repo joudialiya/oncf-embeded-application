@@ -9,7 +9,7 @@ Le repository contient plusieurs classes cle qui convergent vers ce but.
 - Une première version du programme qui capture les messages de CCU en temps réel et les persiste dans la base de données, C’est la classe Main.
 
 Le projet est initié avec Intellij IDEA  mais il suit la structure du fichier d’un projet Maven normal.
-Pour exécuter le projet ca sera mieux de l'ouvrir dans un IDE, comme ca vous pouvez exécuter les test unitair, et jouer avec le code. Si non vous pouvez utiliser Maven command pour générer un JAR et l'exécuter comme un programme java normal, dans ce cas seulement le test de la première version du programme sera lancé.
+Pour exécuter le projet ca sera mieux de l'ouvrir dans un IDE, comme ca vous pouvez exécuter les tests unitaires, et jouer avec le code. Si non vous pouvez utiliser Maven command pour générer un JAR et l'exécuter comme un programme java normal, dans ce cas seulement le test de la première version du programme sera lancé.
 
 # Les fichiers inclus dans le projet en dehors du code source:
 **Output**: c’est un relevé du CCU déjà téléchargé,  vous pouvez l’utiliser pour test Diagnostic File Recorder. (le test est dans les tests unitaires).
