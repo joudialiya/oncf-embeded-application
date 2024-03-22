@@ -18,7 +18,7 @@ Pour exécuter le projet ca sera mieux de l'ouvrir dans un IDE, comme ca vous po
 
 **Resources.xml**: C’est un fichier XML qui contient les informations sur les codes des pannes/événements.
 
-**breakdown.txt**: C’est un fichier txt qui contient des messages capture du CCU, on l'utilise dans le test de la première version du programme pour simuler CCU envoyant les messages.
+**breakdown.txt**: C’est un fichier txt qui contient des messages captures du CCU, on l'utilise dans le test de la première version du programme pour simuler CCU envoyant les messages.
 
 # Les prerequis:
 Vous aurez besoin de:
