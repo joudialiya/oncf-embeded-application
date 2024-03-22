@@ -35,7 +35,7 @@ Et Pour que vous pouvez effectuer quelque test unitaire ainsi que le test de la 
 
 ![img.png](img.png)
 
-# Plus d'informations sur le test du premier version du program:
+# Plus d'informations sur le test de la premiere version du program:
 Quesqu’il fait ?
 - Recevoir  les messages de la connection serial
 - Extraire les informations des événements/pannes
